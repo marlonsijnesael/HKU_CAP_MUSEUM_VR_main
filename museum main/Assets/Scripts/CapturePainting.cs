@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-public class CapturePainting : MonoBehaviour {
+public class CapturePainting : MonoBehaviour
+{
 
     public RenderTexture paintingScreen;
     public GameObject screenLayer1;
@@ -15,10 +16,11 @@ public class CapturePainting : MonoBehaviour {
     private int frameCount = 0;
     private Texture2D resultantImage;
     public RenderTexture currentRT;
-  
+
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
 
 
         bigScreen2MeshRenderer = screenLayer2.GetComponent<MeshRenderer>();
@@ -28,7 +30,7 @@ public class CapturePainting : MonoBehaviour {
         if (Directory.Exists(screenshotsDirectory))
         {
             Directory.Delete(screenshotsDirectory, true);
-        }      
+        }
         //if (!Application.isEditor)
         if (!Directory.Exists(screenshotsDirectory))
         {
@@ -53,11 +55,12 @@ public class CapturePainting : MonoBehaviour {
 
     private void OnPostRender()
     {
-        
+
     }
 
     // Update is called once per frame
-    void Update () {
+    void Update()
+    {
 
         //Taking Screenshots
         //frameCount += 1;
@@ -84,7 +87,7 @@ public class CapturePainting : MonoBehaviour {
             TakeScreenShot();
             ReadPixelsOut("SS_" + screenshotCount + ".png");
             //FreezeCam();
-            
+
             //StartFreezing();
 
         }
@@ -106,7 +109,11 @@ public class CapturePainting : MonoBehaviour {
             Texture2D tex = new Texture2D(cam.targetTexture.width, cam.targetTexture.height, TextureFormat.RGB24, false);
             tex.LoadImage(bytes);
 
-            screenLayer2.GetComponent<Renderer>().material.mainTexture = tex;
+            screenLayer1.GetComponent<Renderer>().material.mainTexture = tex;
+
+            StartCoroutine("FadePaintingIn");
+
+            //screenLayer2.GetComponent<Renderer>().material.mainTexture = tex;
 
 
             // save on disk
@@ -120,46 +127,48 @@ public class CapturePainting : MonoBehaviour {
     IEnumerator FadePaintingIn()
     {
 
-        if(screenshotCount == 1)
+        //if(screenshotCount == 1)
+        //{
+        Color tcolor1;
+        Color tcolor2;
+
+        for (float f = 1.0f; f >= 0; f -= 0.005f)
         {
-            Color tcolor1;
-            Color tcolor2;
+            tcolor1 = screenLayer1.GetComponent<Renderer>().material.color;
+            tcolor2 = screenLayer2.GetComponent<Renderer>().material.color;
+            tcolor1.a = 1 - f;
+            tcolor2.a = f;
+            ////imageLayer1.color = tcolor1;
+            screenLayer1.GetComponent<Renderer>().material.color = tcolor1;
 
-            for (float f = 1.0f; f >= 0; f -= 0.005f)
-            {
-                //tcolor1 = layer1.GetComponent<Renderer>().material.color;
-                //tcolor2 = layer2.GetComponent<Renderer>().material.color;
-                //tcolor1.a = f;
-                //tcolor2.a = 1 - f;
-                ////imageLayer1.color = tcolor1;
-                //layer2.GetComponent<Renderer>().material.color = tcolor2;
+            //matEnvironment1 = stages[layer].GetComponent<SkinnedMeshRenderer>().materials;
+            //for (int i = 0; i < matEnvironment1.Length; i++)
+            //{
+            //    tColorEnvironment = matEnvironment1[i].color;
+            //    tColorEnvironment.a = f;
 
-                //matEnvironment1 = stages[layer].GetComponent<SkinnedMeshRenderer>().materials;
-                //for (int i = 0; i < matEnvironment1.Length; i++)
-                //{
-                //    tColorEnvironment = matEnvironment1[i].color;
-                //    tColorEnvironment.a = f;
+            //    matEnvironment1[i].color = tColorEnvironment;
+            //}
 
-                //    matEnvironment1[i].color = tColorEnvironment;
-                //}
+            //matEnvironment2 = stages[layer + 1].GetComponent<SkinnedMeshRenderer>().materials;
+            //for (int i = 0; i < matEnvironment2.Length; i++)
+            //{
+            //    tColorEnvironment = matEnvironment2[i].color;
+            //    tColorEnvironment.a = 1.0f - f;
 
-                //matEnvironment2 = stages[layer + 1].GetComponent<SkinnedMeshRenderer>().materials;
-                //for (int i = 0; i < matEnvironment2.Length; i++)
-                //{
-                //    tColorEnvironment = matEnvironment2[i].color;
-                //    tColorEnvironment.a = 1.0f - f;
-
-                //    matEnvironment2[i].color = tColorEnvironment;
-                //}
+            //    matEnvironment2[i].color = tColorEnvironment;
+            //}
 
 
 
-                yield return new WaitForSeconds(0.005f);
+            yield return new WaitForSeconds(0.005f);
 
-
-            }
 
         }
+
+        screenLayer2.GetComponent<Renderer>().material.mainTexture = screenLayer1.GetComponent<Renderer>().material.mainTexture;
+
+        //}
 
 
         yield return new WaitForSeconds(0.005f);
@@ -177,8 +186,8 @@ public class CapturePainting : MonoBehaviour {
 
         //bigScreen2.GetComponent<MeshRenderer>().material.mainTexture = resultantImage;
 
-       
-        
+
+
         resultantImage.ReadPixels(new Rect(0, 0, cam.targetTexture.width, cam.targetTexture.height), 0, 0);
         resultantImage.Apply();
     }
