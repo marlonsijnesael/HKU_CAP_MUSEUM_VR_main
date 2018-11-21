@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
+
 public class CapturePainting : MonoBehaviour
 {
 
@@ -16,7 +17,7 @@ public class CapturePainting : MonoBehaviour
     private int frameCount = 0;
     private Texture2D resultantImage;
     public RenderTexture currentRT;
-
+    
 
     // Use this for initialization
     void Start()
