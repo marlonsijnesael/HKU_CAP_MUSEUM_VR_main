@@ -101,7 +101,8 @@ public class CapturePainting : MonoBehaviour
         if (resultantImage != null)
         {
             resultantImage.GetPixels();
-            RenderTexture.active = currentRT;
+            //RenderTexture.active = currentRT;
+            RenderTexture.active = cam.targetTexture;
 
             byte[] bytes = resultantImage.EncodeToPNG();
 

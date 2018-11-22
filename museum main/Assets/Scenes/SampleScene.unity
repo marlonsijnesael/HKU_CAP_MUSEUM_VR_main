@@ -2349,6 +2349,7 @@ GameObject:
   - component: {fileID: 228375338}
   - component: {fileID: 228375337}
   - component: {fileID: 228375336}
+  - component: {fileID: 228375339}
   m_Layer: 0
   m_Name: Main Camera (1)
   m_TagString: MainCamera
@@ -2416,6 +2417,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 2.644, y: -91.813, z: -0.08400001}
+--- !u!114 &228375339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 228375335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbcb271b003e2cb46b33041bd562f93a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paintingScreen: {fileID: 8400000, guid: 3c22ae7be1b84914687d7fa37459711f, type: 2}
+  screenLayer1: {fileID: 146604721}
+  screenLayer2: {fileID: 1999276962}
+  currentRT: {fileID: 8400000, guid: 3c22ae7be1b84914687d7fa37459711f, type: 2}
 --- !u!1 &238751585
 GameObject:
   m_ObjectHideFlags: 0
@@ -14438,7 +14454,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 30d38f1f5720de4408ed267edeac503d, type: 2}
+  - {fileID: 2100000, guid: 3e94547e659f8d84aa546fef0d3113e8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
