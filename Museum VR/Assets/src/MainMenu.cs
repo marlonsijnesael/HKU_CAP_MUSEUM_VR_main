@@ -6,15 +6,16 @@ using UnityEngine.Audio;
 public class MainMenu : MonoBehaviour
 {
     public float menuTimeVisable;
-    private IEnumerator coroutine;
+    private IEnumerator startscreentimer;
 	public GameObject mainMenu;
+    public GameObject startScreen;
 	public GameObject settingMenu;
 
 	public AudioMixer masterMixer;
+
+    
     // Use this for initialization
     void Start () {
-        //coroutine = WaitAndPrint(menuTimeVisable);
-        //StartCoroutine(coroutine);
     }
 
     // Update is called once per frame
@@ -29,7 +30,10 @@ public class MainMenu : MonoBehaviour
 
 	public void StartApp()
 	{
-		Application.LoadLevel(1);
+        mainMenu.SetActive(false);
+        startScreen.SetActive(true);
+        startscreentimer = StartscreenTimer(5);
+        StartCoroutine(startscreentimer);
 	}
 
 	public void OpenSettings()
@@ -44,14 +48,12 @@ public class MainMenu : MonoBehaviour
 		settingMenu.SetActive(false);
 	}
 
-    private IEnumerator WaitAndPrint(float waitTime)
+    private IEnumerator StartscreenTimer(float waitTime)
     {
         while (true)
         {
             yield return new WaitForSeconds(waitTime);
-            Debug.Log("Done");
-            //startMenuCanvas.SetActive(false);
-            StopCoroutine(coroutine);
+            Application.LoadLevel(1);
         }
     }
 }
