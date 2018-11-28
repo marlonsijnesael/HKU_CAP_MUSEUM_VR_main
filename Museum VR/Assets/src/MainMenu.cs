@@ -20,15 +20,19 @@ public class MainMenu : MonoBehaviour
 
     // Update is called once per frame
     void Update () {
-		
+		if(Input.GetKeyUp(KeyCode.Space))
+        {
+           // SetSound(-15);
+        }
 	}
 
-	public void SetMasterVolume(float mastervolume)
-	{
-		masterMixer.SetFloat("MaserVolume",mastervolume);
-	}
+    public void SetSound(float soundLevel)
+    {
+        Debug.Log("why this no work");
+        masterMixer.SetFloat("musicVol", soundLevel);
+    }
 
-	public void StartApp()
+    public void StartApp()
 	{
         mainMenu.SetActive(false);
         startScreen.SetActive(true);
