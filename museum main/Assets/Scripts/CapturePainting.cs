@@ -2,10 +2,16 @@
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEditor;
+using HTC.UnityPlugin.Vive;
 
 
 public class CapturePainting : MonoBehaviour
 {
+
+    public GameObject spawnPoint;
+    public HandRole hand = HandRole.RightHand;
+    public bool rightTrigger;
 
     public RenderTexture paintingScreen;
     public GameObject screenLayer1;
@@ -17,7 +23,14 @@ public class CapturePainting : MonoBehaviour
     private int frameCount = 0;
     private Texture2D resultantImage;
     public RenderTexture currentRT;
+
+    public GameObject itemSlot;
+    public GameObject item;
+    public bool holdingItem = false;
+    private bool canFade;
+
     
+
 
     // Use this for initialization
     void Start()
@@ -38,6 +51,8 @@ public class CapturePainting : MonoBehaviour
             Directory.CreateDirectory(screenshotsDirectory);
             cam.targetTexture = currentRT;
         }
+
+        canFade = true;
     }
 
     IEnumerator FreezeCam()
@@ -79,20 +94,42 @@ public class CapturePainting : MonoBehaviour
         //    frameCount = 0;
         //}
 
-
-
-
-        if (Input.GetKeyDown(KeyCode.Space))
+     
+        rightTrigger = HandleInput(hand, ControllerButton.Trigger, rightTrigger);
+        if (rightTrigger && canFade)
         {
-            //screenshotCount++;
             TakeScreenShot();
             ReadPixelsOut("SS_" + screenshotCount + ".png");
-            //FreezeCam();
-
-            //StartFreezing();
-
+            //do stuff
         }
 
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    //screenshotCount++;
+        //    TakeScreenShot();
+        //    ReadPixelsOut("SS_" + screenshotCount + ".png");
+        //    //FreezeCam();
+
+        //    //StartFreezing();
+
+        //}
+
+
+    }
+
+    public bool HandleInput(HandRole _hand, ControllerButton _controllerButton, bool _inputBool)
+    {
+        if (ViveInput.GetPress(_hand, _controllerButton))
+        {
+            return _inputBool = true;
+        }
+
+        if (ViveInput.GetPressUp(_hand, _controllerButton))
+        {
+            return _inputBool = false;
+        }
+
+        return false;
 
     }
 
@@ -112,6 +149,7 @@ public class CapturePainting : MonoBehaviour
             tex.LoadImage(bytes);
 
             screenLayer1.GetComponent<Renderer>().material.mainTexture = tex;
+            //screenLayer2.GetComponent<Renderer>().material.mainTexture = tex;
 
             StartCoroutine("FadePaintingIn");
 
@@ -133,6 +171,11 @@ public class CapturePainting : MonoBehaviour
         //{
         Color tcolor1;
         Color tcolor2;
+
+        canFade = false;
+
+        tcolor1 = screenLayer1.GetComponent<Renderer>().material.color;
+        tcolor2 = screenLayer2.GetComponent<Renderer>().material.color;
 
         for (float f = 1.0f; f >= 0; f -= 0.005f)
         {
@@ -168,12 +211,15 @@ public class CapturePainting : MonoBehaviour
 
         }
 
+        screenLayer2.GetComponent<Renderer>().material.color = tcolor1;
         screenLayer2.GetComponent<Renderer>().material.mainTexture = screenLayer1.GetComponent<Renderer>().material.mainTexture;
 
         //}
 
 
         yield return new WaitForSeconds(0.005f);
+
+        canFade = true;
     }
 
 
