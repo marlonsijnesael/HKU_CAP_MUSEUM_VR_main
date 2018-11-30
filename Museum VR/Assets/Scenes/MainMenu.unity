@@ -113,11 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &184419708 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1587602180963074, guid: be540b97364be0a4890e39e62ac89ed1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1922808109}
 --- !u!1 &190629150
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,21 +388,11 @@ Transform:
   m_Father: {fileID: 622346630}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &432066298 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1384746914293964, guid: be540b97364be0a4890e39e62ac89ed1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1922808109}
 --- !u!4 &475696139 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d,
     type: 2}
   m_PrefabInternal: {fileID: 1725158976}
---- !u!1 &495902035 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1538727058887424, guid: be540b97364be0a4890e39e62ac89ed1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1922808109}
 --- !u!1001 &518703862
 Prefab:
   m_ObjectHideFlags: 0
@@ -1318,11 +1303,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d46cf6b1ad9d84a48ae7548a2a6b41b3, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &646331442 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1391022766006510, guid: be540b97364be0a4890e39e62ac89ed1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1922808109}
 --- !u!4 &676410021 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000012009530204, guid: e3811576a34988d47b60f99463017a58,
@@ -2053,11 +2033,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 224639684911354796, guid: 7b00de4990f62ff4bb00977b3186349e,
     type: 2}
   m_PrefabInternal: {fileID: 1624680413}
---- !u!1 &1625068251 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1883185261795400, guid: be540b97364be0a4890e39e62ac89ed1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1922808109}
 --- !u!114 &1651813602 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114145336549655658, guid: 7b00de4990f62ff4bb00977b3186349e,
@@ -2152,11 +2127,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1731670438 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000013941130086, guid: be540b97364be0a4890e39e62ac89ed1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1922808109}
 --- !u!4 &1731670439 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011401111930, guid: be540b97364be0a4890e39e62ac89ed1,
@@ -2304,12 +2274,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPopulateObjectReferences: 1
-  actualBoundaries: {fileID: 1731670438}
-  actualHeadset: {fileID: 184419708}
-  actualLeftController: {fileID: 495902035}
-  actualRightController: {fileID: 646331442}
-  modelAliasLeftController: {fileID: 432066298}
-  modelAliasRightController: {fileID: 1625068251}
+  actualBoundaries: {fileID: 0}
+  actualHeadset: {fileID: 0}
+  actualLeftController: {fileID: 0}
+  actualRightController: {fileID: 0}
+  modelAliasLeftController: {fileID: 0}
+  modelAliasRightController: {fileID: 0}
   cachedSystemSDKInfo:
     baseTypeName: VRTK.SDK_BaseSystem
     fallbackTypeName: VRTK.SDK_FallbackSystem
