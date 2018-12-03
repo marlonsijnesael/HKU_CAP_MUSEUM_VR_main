@@ -96,6 +96,8 @@ public class CapturePainting : MonoBehaviour
 
      
         rightTrigger = HandleInput(hand, ControllerButton.Trigger, rightTrigger);
+
+        
         if (rightTrigger && canFade)
         {
             TakeScreenShot();
@@ -128,6 +130,9 @@ public class CapturePainting : MonoBehaviour
         {
             return _inputBool = false;
         }
+
+        
+       
 
         return false;
 
