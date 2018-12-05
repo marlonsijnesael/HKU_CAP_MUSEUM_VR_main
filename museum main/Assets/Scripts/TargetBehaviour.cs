@@ -6,13 +6,13 @@ public class TargetBehaviour : MonoBehaviour {
 
     public GameObject candle;
     public bool hasCandle;  
-    CapsuleCollider candleCollider;
+    Collider candleCollider;
     Collider tempCollider;
 
 	// Use this for initialization
 	void Start () {
 
-        candleCollider = candle.GetComponentInChildren<CapsuleCollider>();
+        candleCollider = candle.GetComponentInChildren<Collider>();
         hasCandle = false;
 		
 	}

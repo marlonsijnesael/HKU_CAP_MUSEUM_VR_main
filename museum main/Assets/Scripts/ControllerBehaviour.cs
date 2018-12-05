@@ -5,7 +5,7 @@ using UnityEngine;
 public class ControllerBehaviour : MonoBehaviour {
 
     public GameObject candle;
-    CapsuleCollider candleCollider;
+    Collider candleCollider;
 
     GameObject target;
     TargetBehaviour targetBehaviour;
@@ -16,7 +16,7 @@ public class ControllerBehaviour : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        candleCollider = candle.GetComponentInChildren<CapsuleCollider>();
+        candleCollider = candle.GetComponentInChildren<Collider>();
 
     }
 	
