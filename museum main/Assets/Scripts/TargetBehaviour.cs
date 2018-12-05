@@ -24,15 +24,31 @@ public class TargetBehaviour : MonoBehaviour {
 		
 	}
 
+    bool IsInRange(float xAngle)
+    {
+        if((xAngle >= 355 && xAngle <= 360) || (xAngle >= 0 && xAngle <= 5))
+        {
+
+            return true;
+        }
+        else
+        {
+
+            return false;
+        }
+
+    }
+
     IEnumerator ChangeParentsSlow()
     {
 
-        if (tempCollider == candleCollider && !hasCandle)
+        if ((tempCollider == candleCollider) && !hasCandle && IsInRange(candle.transform.rotation.eulerAngles.x))
         {
 
             candle.transform.parent = this.transform;
             yield return new WaitForSeconds(1.0f);
             hasCandle = true;
+         
 
         }
 

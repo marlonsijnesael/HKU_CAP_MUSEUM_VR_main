@@ -5,21 +5,20 @@ using UnityEngine;
 public class ControllerBehaviour : MonoBehaviour {
 
     public GameObject candle;
-    public GameObject target;
     CapsuleCollider candleCollider;
+
+    GameObject target;
     TargetBehaviour targetBehaviour;
     BoxCollider targetCollider;
+
     Collider tempCollider;
 
 	// Use this for initialization
 	void Start () {
 
         candleCollider = candle.GetComponentInChildren<CapsuleCollider>();
-        targetBehaviour = target.GetComponent <TargetBehaviour>();
-        targetCollider = target.GetComponent<BoxCollider>();
-        
-		
-	}
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -30,16 +29,24 @@ public class ControllerBehaviour : MonoBehaviour {
 
     IEnumerator ChangeParentsSlow()
     {
+ 
 
-        if (tempCollider == candleCollider && targetBehaviour.hasCandle)
+        if (tempCollider == candleCollider)
         {
+            target = candle.transform.parent.gameObject;
+            targetBehaviour = target.GetComponent<TargetBehaviour>();
+            targetCollider = target.GetComponent<BoxCollider>();
 
-            candle.transform.parent = this.transform.parent;
-            yield return new WaitForSeconds(1.0f);
-            targetBehaviour.hasCandle = false;
+            if (targetBehaviour.hasCandle)
+            {
+                candle.transform.parent = this.transform.parent;
+                yield return new WaitForSeconds(1.0f);
+                targetBehaviour.hasCandle = false;
+            }
+
+            
 
         }
-        
 
     }
 
