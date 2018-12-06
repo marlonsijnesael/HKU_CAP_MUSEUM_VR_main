@@ -8,14 +8,17 @@ public class TargetBehaviour : MonoBehaviour {
     public bool hasCandle;  
     Collider candleCollider;
     Collider tempCollider;
+    AudioSource audioData;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 
         candleCollider = candle.GetComponentInChildren<Collider>();
         hasCandle = false;
-		
-	}
+        audioData = GetComponent<AudioSource>();
+        //audioData.Play(0);
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -46,6 +49,7 @@ public class TargetBehaviour : MonoBehaviour {
         {
 
             candle.transform.parent = this.transform;
+            audioData.Play(0);
             yield return new WaitForSeconds(1.0f);
             hasCandle = true;
          
