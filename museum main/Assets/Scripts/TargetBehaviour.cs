@@ -31,7 +31,7 @@ public class TargetBehaviour : MonoBehaviour {
     {
         if((xAngle >= 355 && xAngle <= 360) || (xAngle >= 0 && xAngle <= 5))
         {
-
+            print(xAngle);
             return true;
         }
         else
@@ -45,7 +45,7 @@ public class TargetBehaviour : MonoBehaviour {
     IEnumerator ChangeParentSlow()
     {
 
-        if ((tempCollider == candleCollider) && !hasCandle && IsInRange(candle.transform.rotation.eulerAngles.x))
+        if ((tempCollider == candleCollider) && !hasCandle && IsInRange(candle.transform.rotation.eulerAngles.z))
         {
 
             candle.transform.parent = this.transform;

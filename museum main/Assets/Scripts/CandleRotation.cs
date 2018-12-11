@@ -12,7 +12,7 @@ public class CandleRotation : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        print(this.transform.rotation.eulerAngles);
+        //print(this.transform.rotation.eulerAngles);
 		
 	}
 }
