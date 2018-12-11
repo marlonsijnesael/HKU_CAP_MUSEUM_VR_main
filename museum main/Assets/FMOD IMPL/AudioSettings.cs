@@ -31,6 +31,7 @@ public class AudioSettings : MonoBehaviour {
 
     private void Awake()
     {
+        
         //singleton reference//
         #region singleton
         if (_instance == null)
