@@ -89,5 +89,6 @@ public class AudioSettings : MonoBehaviour {
         masterBus.setVolume(masterVolume);
         musicBus.setVolume(musicVolume);
         oneShotBus.setVolume(oneShotsVolume);
+        SetSFX(sFXVolume);
     }
 }
