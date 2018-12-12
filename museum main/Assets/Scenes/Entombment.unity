@@ -1599,10 +1599,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbcb271b003e2cb46b33041bd562f93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 0}
+  hand: 0
+  rightTrigger: 0
   paintingScreen: {fileID: 8400000, guid: 6dd4339b601122042846c85e177487ba, type: 2}
   screenLayer1: {fileID: 503018000}
   screenLayer2: {fileID: 1725004417}
   currentRT: {fileID: 8400000, guid: c38ab16bd04161540af6016a471becbd, type: 2}
+  itemSlot: {fileID: 0}
+  item: {fileID: 0}
+  holdingItem: 0
 --- !u!81 &307036361
 AudioListener:
   m_ObjectHideFlags: 0
@@ -10532,7 +10538,7 @@ Prefab:
     - target: {fileID: 224000012623161658, guid: d46cf6b1ad9d84a48ae7548a2a6b41b3,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 369
+      value: 1839
       objectReference: {fileID: 0}
     - target: {fileID: 224000012623161658, guid: d46cf6b1ad9d84a48ae7548a2a6b41b3,
         type: 2}

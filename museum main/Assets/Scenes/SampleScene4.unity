@@ -11658,8 +11658,10 @@ MonoBehaviour:
   pathToMasterBus: Master
   pathToMusicBus: Master/Music
   PathToOneShotBus: Master/OneShots
+  pathToSFXBus: 
   musicVolume: 0.5
   oneShotsVolume: 0.5
+  sFXVolume: 0.5
   UI: {fileID: 491084668}
   key: 97
 --- !u!4 &823980351
@@ -25312,7 +25314,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &2138677392
 Light:
   m_ObjectHideFlags: 0
