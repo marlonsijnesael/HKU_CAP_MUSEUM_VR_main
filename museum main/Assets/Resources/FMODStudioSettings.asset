@@ -15,7 +15,7 @@ MonoBehaviour:
   HasPlatforms: 1
   sourceProjectPath: C:\Users\Student\Desktop\FMOD_sounddesign+music\FMOD_sounddesign.fspro
   SourceProjectPathUnformatted: C:\Users\Student\Desktop\FMOD_sounddesign+music\FMOD_sounddesign.fspro
-  SourceBankPathUnformatted: C:\Users\Student\Desktop\FMOD_sounddesign+music\Build
+  SourceBankPathUnformatted: C:\Users\Student\Documents\GitHub\FMOD\FMOD_sounddesign+music\Build
   AutomaticEventLoading: 1
   AutomaticSampleLoading: 1
   ImportType: 0
@@ -58,6 +58,5 @@ MonoBehaviour:
   - Platform: 2
     Value: 32
   Plugins: []
-  MasterBanks:
-  - Master Bank
+  MasterBanks: []
   Banks: []
