@@ -12,20 +12,20 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114893334720693724}
-  - {fileID: 114910300467980986}
+  - {fileID: 114895508419415144}
+  - {fileID: 114861681435127940}
   EditorEvents:
-  - {fileID: 114028691545144638}
-  - {fileID: 114582489706046558}
-  - {fileID: 114214246129142432}
-  - {fileID: 114120553633302278}
-  - {fileID: 114170228283985976}
-  - {fileID: 114764294847682794}
+  - {fileID: 114160498043932846}
+  - {fileID: 114713484185340490}
+  - {fileID: 114930410166689668}
+  - {fileID: 114439091723565942}
+  - {fileID: 114122918361615546}
+  - {fileID: 114337153340515928}
   MasterBanks:
-  - {fileID: 114910300467980986}
+  - {fileID: 114861681435127940}
   StringsBanks:
-  - {fileID: 114893334720693724}
-  stringsBankWriteTime: 636801016080000000
+  - {fileID: 114895508419415144}
+  stringsBankWriteTime: 636801787940000000
   cacheVersion: 3
 --- !u!114 &114001850999318880
 MonoBehaviour:
@@ -171,6 +171,66 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 34285
+--- !u!114 &114122918361615546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SounDesign/oppakken_kandelaar
+  guid: c1eb5034d1f5f84d8473e45b7321801d
+  Banks:
+  - {fileID: 114861681435127940}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 905
+--- !u!114 &114155684949207054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: distance_vlam
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114160498043932846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SounDesign/schuiven_kandelaar
+  guid: 0c2ef8b87732294485d02f58f7438d3c
+  Banks:
+  - {fileID: 114861681435127940}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114878721470994576}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 41535
 --- !u!114 &114168992377868784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,6 +372,29 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114337153340515928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SounDesign/vlam
+  guid: e99ffaef08433f47919957142b97c817
+  Banks:
+  - {fileID: 114861681435127940}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114155684949207054}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 213778
 --- !u!114 &114341694619971158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -402,6 +485,29 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114439091723565942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Music/luit
+  guid: 5e693d4cb20a5d43941f74cc4203c4c7
+  Banks:
+  - {fileID: 114861681435127940}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114832712445619098}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 34285
 --- !u!114 &114457740681266610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -580,6 +686,28 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 905
+--- !u!114 &114713484185340490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SounDesign/chatting_room
+  guid: 3bf4a3830e7985489db75cce323a90a8
+  Banks:
+  - {fileID: 114861681435127940}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 261537
 --- !u!114 &114764294847682794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -603,7 +731,56 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 213778
+--- !u!114 &114832712445619098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: distance_lute
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114861681435127940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\Student\Documents\GitHub\FMOD\FMOD_sounddesign+music\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636801787920000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 3589440
+  Exists: 1
 --- !u!114 &114862405081117706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: schuiven_parameter
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114878721470994576
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -652,6 +829,25 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1154
   Exists: 1
+--- !u!114 &114895508419415144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\Student\Documents\GitHub\FMOD\FMOD_sounddesign+music\Build\Desktop\Master
+    Bank.strings.bank
+  lastModified: 636801787940000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1154
+  Exists: 1
 --- !u!114 &114910300467980986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -686,3 +882,25 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114930410166689668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SounDesign/neerzetten_kandelaar
+  guid: 5ae3450ba42f9e4c83bc1d92f414a425
+  Banks:
+  - {fileID: 114861681435127940}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 793

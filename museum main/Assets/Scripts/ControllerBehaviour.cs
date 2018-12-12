@@ -10,6 +10,8 @@ public class ControllerBehaviour : MonoBehaviour {
     GameObject target;
     TargetBehaviour targetBehaviour;
     BoxCollider targetCollider;
+    Animator anim;
+    bool isClosed;
 
     Collider tempCollider;
 
@@ -17,6 +19,9 @@ public class ControllerBehaviour : MonoBehaviour {
 	void Start () {
 
         candleCollider = candle.GetComponentInChildren<Collider>();
+        anim = GetComponent<Animator>();
+        isClosed = false;
+        GrabHand();
 
     }
 	
@@ -39,9 +44,11 @@ public class ControllerBehaviour : MonoBehaviour {
 
             if (targetBehaviour.hasCandle)
             {
+                GrabHand();
                 candle.transform.parent = this.transform.parent;
                 yield return new WaitForSeconds(1.0f);
                 targetBehaviour.hasCandle = false;
+                
             }
 
             
@@ -61,6 +68,32 @@ public class ControllerBehaviour : MonoBehaviour {
         //    hasCandle = true;
 
         //}
+
+
+    }
+
+    public void OpenHand()
+    {
+        print("Isin");
+        if (isClosed)
+        {
+            anim.Play("OpenAnimationR");
+            isClosed = false;
+
+
+        }
+
+    }
+
+    public void GrabHand()
+    {
+        if (!isClosed)
+        {
+            anim.Play("GrabAnimationR");
+            isClosed = true;
+
+
+        }
 
 
     }

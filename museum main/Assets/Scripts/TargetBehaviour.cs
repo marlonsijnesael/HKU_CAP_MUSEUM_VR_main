@@ -5,10 +5,12 @@ using UnityEngine;
 public class TargetBehaviour : MonoBehaviour {
 
     public GameObject candle;
+    public GameObject hand;
     public bool hasCandle;  
     Collider candleCollider;
     Collider tempCollider;
     AudioSource audioData;
+    ControllerBehaviour controllerBehaviour;
 
     // Use this for initialization
     void Start () {
@@ -16,6 +18,8 @@ public class TargetBehaviour : MonoBehaviour {
         candleCollider = candle.GetComponentInChildren<Collider>();
         hasCandle = false;
         audioData = GetComponent<AudioSource>();
+        controllerBehaviour = hand.GetComponent<ControllerBehaviour>();
+
         //audioData.Play(0);
 
     }
@@ -52,6 +56,8 @@ public class TargetBehaviour : MonoBehaviour {
             audioData.Play(0);
             yield return new WaitForSeconds(1.0f);
             hasCandle = true;
+            print("Isin1");
+            controllerBehaviour.OpenHand();
          
 
         }
