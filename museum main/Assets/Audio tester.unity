@@ -90,7 +90,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1447,8 +1447,10 @@ MonoBehaviour:
   pathToMasterBus: Master
   pathToMusicBus: Master/Music
   PathToOneShotBus: Master/OneShots
+  pathToSFXBus: Master/Sfx
   musicVolume: 0.5
   oneShotsVolume: 0.5
+  sFXVolume: 0.5
   UI: {fileID: 756793929}
   key: 97
 --- !u!4 &1770910691
