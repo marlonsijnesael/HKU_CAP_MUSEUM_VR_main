@@ -10,10 +10,12 @@ public class AudioSettings : MonoBehaviour {
     FMOD.Studio.Bus masterBus;
     FMOD.Studio.Bus musicBus;
     FMOD.Studio.Bus oneShotBus;
+    FMOD.Studio.Bus sFXBus;
 
     public string pathToMasterBus;
     public string pathToMusicBus;
     public string PathToOneShotBus;
+    public string pathToSFXBus;
 
     [Header("Sound Settings")]
     [HideInInspector]
@@ -22,6 +24,8 @@ public class AudioSettings : MonoBehaviour {
     public float musicVolume = 0.5f;
     [HideInInspector]
     public float oneShotsVolume = 0.5f;
+    [HideInInspector]
+    public float sFXVolume = 0.5f;
 
     public static AudioSettings _instance;
 
@@ -47,6 +51,7 @@ public class AudioSettings : MonoBehaviour {
         masterBus = FMODUnity.RuntimeManager.GetBus("bus:/" + pathToMasterBus);
         musicBus = FMODUnity.RuntimeManager.GetBus("bus:/" + pathToMusicBus);
         oneShotBus = FMODUnity.RuntimeManager.GetBus("bus:/" + PathToOneShotBus);
+        sFXBus = FMODUnity.RuntimeManager.GetBus("bus:/" + pathToSFXBus);
         UpdateSettings();
         UI.SetActive(false);
     }
@@ -72,6 +77,11 @@ public class AudioSettings : MonoBehaviour {
     public void SetOneShotVolume(float _newVolume)
     {
         oneShotsVolume = _newVolume;
+    }
+
+    public void SetSFX(float _newVolume)
+    {
+        sFXVolume = _newVolume;
     }
 
     public void UpdateSettings()
