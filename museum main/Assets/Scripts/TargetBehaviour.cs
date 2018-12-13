@@ -54,10 +54,11 @@ public class TargetBehaviour : MonoBehaviour {
 
             candle.transform.parent = this.transform;
             audioData.Play(0);
+            controllerBehaviour.OpenHand();
             yield return new WaitForSeconds(1.0f);
             hasCandle = true;
             print("Isin1");
-            controllerBehaviour.OpenHand();
+            
          
 
         }
