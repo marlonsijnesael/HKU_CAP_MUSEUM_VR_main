@@ -29,14 +29,36 @@ public class ControllerBehaviour : MonoBehaviour {
 	void Update () {
 
 
-		
+        print(transform.rotation.eulerAngles.z);
 	}
+
+    bool IsInRange(float Angle)
+    {
+        if ((Angle >= 260) && (Angle <= 280))
+        {
+            //print(Angle);
+            return true;
+        }
+        else
+        {
+
+            return false;
+        }
+
+    }
+
+    bool HandInPosition()
+    {
+
+
+        return true;
+    }
 
     IEnumerator ChangeParentsSlow()
     {
  
 
-        if (tempCollider == candleCollider)
+        if ((tempCollider == candleCollider) && IsInRange(transform.rotation.eulerAngles.z))
         {
             target = candle.transform.parent.gameObject;
             targetBehaviour = target.GetComponent<TargetBehaviour>();
@@ -74,7 +96,7 @@ public class ControllerBehaviour : MonoBehaviour {
 
     public void OpenHand()
     {
-        print("Isin");
+        //print("Isin");
         if (isClosed)
         {
             anim.Play("OpenAnimationR");

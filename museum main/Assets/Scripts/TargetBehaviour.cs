@@ -12,20 +12,35 @@ public class TargetBehaviour : MonoBehaviour {
     AudioSource audioData;
     ControllerBehaviour controllerBehaviour;
 
+    [FMODUnity.EventRef]
+    public string f_event;
+    //[FMODUnity.EventRef]
+    //public string[] _events;
+
+    [SerializeField]
+    public FMOD.Studio.EventInstance f_Instance;
+
     // Use this for initialization
     void Start () {
 
         candleCollider = candle.GetComponentInChildren<Collider>();
         hasCandle = false;
-        audioData = GetComponent<AudioSource>();
+        //audioData = GetComponent<AudioSource>();
         controllerBehaviour = hand.GetComponent<ControllerBehaviour>();
+        
 
         //audioData.Play(0);
 
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    private void Awake()
+    {
+        f_Instance = FMODUnity.RuntimeManager.CreateInstance(f_event);
+
+    }
+
+    // Update is called once per frame
+    void Update () {
 
 
 		
@@ -53,7 +68,10 @@ public class TargetBehaviour : MonoBehaviour {
         {
 
             candle.transform.parent = this.transform;
-            audioData.Play(0);
+            //audioData.Play(0);
+            FMODUnity.RuntimeManager.AttachInstanceToGameObject(f_Instance, GetComponent<Transform>(), GetComponent<Rigidbody>());
+            f_Instance.start();
+
             controllerBehaviour.OpenHand();
             yield return new WaitForSeconds(1.0f);
             hasCandle = true;

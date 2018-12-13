@@ -14,6 +14,7 @@ public class F_Template : MonoBehaviour
     {
         f_Instance = FMODUnity.RuntimeManager.CreateInstance(f_event);
         f_Instance.start();
+
     }
 
   
