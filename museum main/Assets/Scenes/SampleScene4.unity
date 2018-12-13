@@ -9039,6 +9039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   candle: {fileID: 548405608}
+  hand: {fileID: 0}
   hasCandle: 0
 --- !u!4 &672198211
 Transform:
@@ -13044,6 +13045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   candle: {fileID: 548405608}
+  hand: {fileID: 0}
   hasCandle: 0
 --- !u!65 &894808689
 BoxCollider:
@@ -16426,6 +16428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   candle: {fileID: 942352166}
+  hand: {fileID: 0}
   hasCandle: 0
 --- !u!1 &1227839677
 GameObject:
