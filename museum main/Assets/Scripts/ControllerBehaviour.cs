@@ -34,7 +34,7 @@ public class ControllerBehaviour : MonoBehaviour {
 
     bool IsInRange(float Angle)
     {
-        if ((Angle >= 260) && (Angle <= 280))
+        if ((Angle >= 240) && (Angle <= 290))
         {
             //print(Angle);
             return true;
