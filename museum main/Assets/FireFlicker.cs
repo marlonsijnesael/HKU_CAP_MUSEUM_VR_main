@@ -16,8 +16,8 @@ public class FireFlicker : MonoBehaviour {
 
     private void Update()
     {
-        float brightness = Mathf.Abs(Mathf.Sin((Time.deltaTime * maxIntensity) *brightnessMultiplier));
-        lt.intensity = maxIntensity * brightness;
-        rend.material.SetFloat("_fire_brightness", brightness);
+        float brightness = brightnessMultiplier * Mathf.Abs(Mathf.Sin((Time.deltaTime *  maxIntensity) ));
+        lt.intensity = brightness + 4;
+        rend.material.SetFloat("_fire_brightness", brightness );
     }
 }
