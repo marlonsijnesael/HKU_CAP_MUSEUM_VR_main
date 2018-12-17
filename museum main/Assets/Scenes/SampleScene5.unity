@@ -5852,6 +5852,7 @@ GameObject:
   - component: {fileID: 1595766683}
   - component: {fileID: 1595766689}
   - component: {fileID: 1595766688}
+  - component: {fileID: 1595766690}
   m_Layer: 0
   m_Name: flame
   m_TagString: Untagged
@@ -6065,6 +6066,19 @@ MonoBehaviour:
   f_event: event:/SounDesign/vlam
   _events:
   - event:/SounDesign/vlam
+--- !u!114 &1595766690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1595766681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0cc02833a9239144934a03f9c5a8335, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rend: {fileID: 1595766686}
+  lt: {fileID: 689020061}
 --- !u!1 &1610066592
 GameObject:
   m_ObjectHideFlags: 0
