@@ -211,7 +211,7 @@ public class CapturePainting : MonoBehaviour
 
 
 
-            yield return new WaitForSeconds(0.005f);
+            yield return new WaitForSeconds(0.0025f);
 
 
         }

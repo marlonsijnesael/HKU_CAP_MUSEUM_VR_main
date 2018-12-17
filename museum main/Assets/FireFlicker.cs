@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FireFlicker : MonoBehaviour {
+public class FireFlicker : MonoBehaviour
+{
 
     public Renderer rend;
     public Light lt;
-    public int maxIntensity;
+    public float maxIntensity;
+    public float maxRange;
     public int brightnessMultiplier;
 
     private void Start()
@@ -16,8 +18,10 @@ public class FireFlicker : MonoBehaviour {
 
     private void Update()
     {
-        float brightness = brightnessMultiplier * Mathf.Abs(Mathf.Sin((Time.deltaTime *  maxIntensity) ));
-        lt.intensity = brightness + 4;
-        rend.material.SetFloat("_fire_brightness", brightness );
+       
+        lt.intensity =  maxIntensity + Mathf.Sin(((Time.time / 1.5f) * maxIntensity));
+        lt.range = maxRange + Mathf.Sin(((Time.time / 1.5f) * maxRange)) / 5;
+     
+       
     }
 }
