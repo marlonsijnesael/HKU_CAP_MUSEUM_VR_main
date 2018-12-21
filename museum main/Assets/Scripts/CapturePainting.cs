@@ -97,6 +97,11 @@ public class CapturePainting : MonoBehaviour
      
         rightTrigger = HandleInput(hand, ControllerButton.Trigger, rightTrigger);
 
+        if(Input.GetKeyUp(KeyCode.Space))
+        {
+            TakeScreenShot();
+            ReadPixelsOut("SS_" + screenshotCount + ".png");
+        }
         
         if (rightTrigger && canFade)
         {
