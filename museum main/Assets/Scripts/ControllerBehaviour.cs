@@ -17,7 +17,6 @@ public class ControllerBehaviour : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
         candleCollider = candle.GetComponentInChildren<Collider>();
         anim = GetComponent<Animator>();
         isClosed = false;
@@ -27,9 +26,7 @@ public class ControllerBehaviour : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-
-        print(transform.rotation.eulerAngles.z);
+        //print(transform.rotation.eulerAngles.z);
 	}
 
     bool IsInRange(float Angle)
@@ -41,23 +38,17 @@ public class ControllerBehaviour : MonoBehaviour {
         }
         else
         {
-
             return false;
         }
-
     }
 
     bool HandInPosition()
     {
-
-
         return true;
     }
 
     IEnumerator ChangeParentsSlow()
     {
- 
-
         if ((tempCollider == candleCollider) && IsInRange(transform.rotation.eulerAngles.z))
         {
             target = candle.transform.parent.gameObject;
@@ -70,13 +61,8 @@ public class ControllerBehaviour : MonoBehaviour {
                 candle.transform.parent = this.transform.parent;
                 yield return new WaitForSeconds(1.0f);
                 targetBehaviour.hasCandle = false;
-                
             }
-
-            
-
         }
-
     }
 
     private void OnTriggerEnter(Collider other)
@@ -90,8 +76,6 @@ public class ControllerBehaviour : MonoBehaviour {
         //    hasCandle = true;
 
         //}
-
-
     }
 
     public void OpenHand()
@@ -113,10 +97,6 @@ public class ControllerBehaviour : MonoBehaviour {
         {
             anim.Play("GrabAnimationR");
             isClosed = true;
-
-
         }
-
-
     }
 }
