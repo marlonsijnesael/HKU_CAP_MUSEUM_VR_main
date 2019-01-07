@@ -5975,6 +5975,26 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 962732290}
+    - target: {fileID: 114924217191684852, guid: 1045451c8ffabb744a128a5b4edd029f,
+        type: 2}
+      propertyPath: grabToggleButton
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114744922111622078, guid: 1045451c8ffabb744a128a5b4edd029f,
+        type: 2}
+      propertyPath: grabToggleButton
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114868920452141286, guid: 1045451c8ffabb744a128a5b4edd029f,
+        type: 2}
+      propertyPath: pointerRenderer
+      value: 
+      objectReference: {fileID: 1467531101}
+    - target: {fileID: 114560933441260370, guid: 1045451c8ffabb744a128a5b4edd029f,
+        type: 2}
+      propertyPath: pointerRenderer
+      value: 
+      objectReference: {fileID: 1467531102}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1045451c8ffabb744a128a5b4edd029f, type: 2}
   m_IsPrefabAsset: 0
@@ -6000,6 +6020,18 @@ MonoBehaviour:
   headsetPositionCompensation: 1
   targetListPolicy: {fileID: 0}
   navMeshLimitDistance: 0
+--- !u!114 &1467531101 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114468665481800312, guid: 1045451c8ffabb744a128a5b4edd029f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1467531098}
+  m_Script: {fileID: 11500000, guid: 7fc65878c7102524bb8c2bcfbefff497, type: 3}
+--- !u!114 &1467531102 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114246619732903670, guid: 1045451c8ffabb744a128a5b4edd029f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1467531098}
+  m_Script: {fileID: 11500000, guid: 7fc65878c7102524bb8c2bcfbefff497, type: 3}
 --- !u!4 &1477742253 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4964179630636540, guid: 98159a0d8383c3e4c91567504a8040f0,
