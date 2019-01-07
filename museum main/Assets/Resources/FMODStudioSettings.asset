@@ -13,9 +13,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: D:\Users\Documenten\HKU_CAP_KeepnotonGit\FMOD_sounddesign+music\FMOD_sounddesign.fspro
-  SourceProjectPathUnformatted: D:\Users\Documenten\HKU_CAP_KeepnotonGit\FMOD_sounddesign+music\FMOD_sounddesign.fspro
-  SourceBankPathUnformatted: D:\Users\Documenten\HKU_CAP_KeepnotonGit\FMOD_sounddesign+music\Build
+  sourceProjectPath: C:\Users\jgardere\Documents\FMOD_sounddesign+music-20181212T091827Z-001\FMOD_sounddesign+music\FMOD_sounddesign.fspro
+  SourceProjectPathUnformatted: C:\Users\jgardere\Documents\FMOD_sounddesign+music-20181212T091827Z-001\FMOD_sounddesign+music\FMOD_sounddesign.fspro
+  SourceBankPathUnformatted: C:\Users\jgardere\Documents\FMOD_sounddesign+music-20181212T091827Z-001\FMOD_sounddesign+music\Build
   AutomaticEventLoading: 1
   AutomaticSampleLoading: 1
   ImportType: 0
@@ -58,6 +58,5 @@ MonoBehaviour:
   - Platform: 2
     Value: 32
   Plugins: []
-  MasterBanks:
-  - Master Bank
+  MasterBanks: []
   Banks: []
