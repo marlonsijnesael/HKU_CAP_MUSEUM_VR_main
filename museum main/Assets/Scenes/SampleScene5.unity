@@ -1016,6 +1016,7 @@ GameObject:
   - component: {fileID: 267060217}
   - component: {fileID: 267060216}
   - component: {fileID: 267060215}
+  - component: {fileID: 267060220}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -1165,6 +1166,21 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &267060220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 267060213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba6af5eaa8d821f4e93093fd37ee3484, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderShadows: 1
+  requiresDepthTexture: 0
+  requiresColorTexture: 0
+  m_Version: 1
 --- !u!1 &302147938
 GameObject:
   m_ObjectHideFlags: 0
@@ -2698,7 +2714,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 0.9372549, b: 0.6666667, a: 1}
-  m_Intensity: 3.3
+  m_Intensity: 0
   m_Range: 0.66
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -6246,11 +6262,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0cc02833a9239144934a03f9c5a8335, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rend: {fileID: 1595766686}
-  lt: {fileID: 689020061}
-  maxIntensity: 1.65
-  maxRange: 4
-  brightnessMultiplier: 15
+  light: {fileID: 689020061}
+  minIntensity: 0
+  maxIntensity: 3.3
+  smoothing: 5
 --- !u!1 &1610066592
 GameObject:
   m_ObjectHideFlags: 0
@@ -6302,7 +6317,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1619247793
 Light:
   m_ObjectHideFlags: 0
