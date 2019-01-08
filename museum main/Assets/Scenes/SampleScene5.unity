@@ -89,7 +89,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000002, guid: 1cf0a4928234126479e760c403785d95,
+    type: 2}
   m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
@@ -853,7 +854,7 @@ GameObject:
   - component: {fileID: 194408663}
   - component: {fileID: 194408665}
   - component: {fileID: 194408664}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Drywall Panel (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1534,7 +1535,7 @@ GameObject:
   - component: {fileID: 414825820}
   - component: {fileID: 414825822}
   - component: {fileID: 414825821}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Drywall Panel (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2145,7 +2146,7 @@ GameObject:
   - component: {fileID: 624584039}
   - component: {fileID: 624584041}
   - component: {fileID: 624584040}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Drywall Panel (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2299,7 +2300,7 @@ GameObject:
   - component: {fileID: 670747862}
   - component: {fileID: 670747864}
   - component: {fileID: 670747863}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Drywall Panel (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4979,7 +4980,7 @@ GameObject:
   - component: {fileID: 1318364838}
   - component: {fileID: 1318364840}
   - component: {fileID: 1318364839}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Drywall Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6051,7 +6052,7 @@ GameObject:
   - component: {fileID: 1586844163}
   - component: {fileID: 1586844165}
   - component: {fileID: 1586844164}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Drywall Panel (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6316,8 +6317,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
 --- !u!108 &1619247793
 Light:
   m_ObjectHideFlags: 0
@@ -6326,14 +6327,14 @@ Light:
   m_GameObject: {fileID: 1619247792}
   m_Enabled: 1
   serializedVersion: 8
-  m_Type: 2
+  m_Type: 1
   m_Color: {r: 0.990566, g: 0.8248192, b: 0.6401299, a: 1}
-  m_Intensity: 2.32
+  m_Intensity: 0.09
   m_Range: 18.8
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -6346,8 +6347,8 @@ Light:
   m_RenderMode: 2
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 16695
-  m_Lightmapping: 1
+    m_Bits: 32768
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
@@ -6489,7 +6490,7 @@ GameObject:
   - component: {fileID: 1658161019}
   - component: {fileID: 1658161021}
   - component: {fileID: 1658161020}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Drywall Panel (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
