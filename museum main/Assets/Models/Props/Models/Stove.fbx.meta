@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: c9aadaabcdab34b4fa80ac433044823c
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: dirty
+    100002: dirty_2
+    100004: dirty_3
+    100006: dirty_4
+    100008: fireplace_top
+    100010: fireplcae_bottom
+    100012: props
+    100014: props_2
+    100016: props_3
+    100018: //RootNode
+    400000: dirty
+    400002: dirty_2
+    400004: dirty_3
+    400006: dirty_4
+    400008: fireplace_top
+    400010: fireplcae_bottom
+    400012: props
+    400014: props_2
+    400016: props_3
+    400018: //RootNode
+    2100000: props_2
+    2100002: props_3
+    2100004: dirty
+    2100006: props
+    2100008: fireplace_top
+    2100010: fireplace_bottom
+    2300000: dirty
+    2300002: dirty_2
+    2300004: dirty_3
+    2300006: dirty_4
+    2300008: fireplace_top
+    2300010: fireplcae_bottom
+    2300012: props
+    2300014: props_2
+    2300016: props_3
+    3300000: dirty
+    3300002: dirty_2
+    3300004: dirty_3
+    3300006: dirty_4
+    3300008: fireplace_top
+    3300010: fireplcae_bottom
+    3300012: props
+    3300014: props_2
+    3300016: props_3
+    4300000: props_2
+    4300002: props_3
+    4300004: dirty_4
+    4300006: dirty_3
+    4300008: dirty_2
+    4300010: dirty
+    4300012: props
+    4300014: fireplace_top
+    4300016: fireplcae_bottom
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dirty
+    second: {fileID: 2100000, guid: 29657f1116301294dae0448b476d0a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fireplace_bottom
+    second: {fileID: 2100000, guid: 349fd5cc76642a1438d18a68952c83fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fireplace_top
+    second: {fileID: 2100000, guid: 18a0680565465d749b6b090962ee20b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: props
+    second: {fileID: 2100000, guid: 4e47925994c35a446a7c5e9e225fa777, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: props_2
+    second: {fileID: 2100000, guid: d2ada519a6eca334892460aeb27d6103, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: props_3
+    second: {fileID: 2100000, guid: a52be08eaf501394b862cb1e94a4b1f8, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
