@@ -12,20 +12,20 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114023211661217164}
-  - {fileID: 114106585772479756}
+  - {fileID: 114693341691898870}
+  - {fileID: 114818466743291222}
   EditorEvents:
-  - {fileID: 114415309706330848}
-  - {fileID: 114203476300421804}
-  - {fileID: 114544950031317760}
-  - {fileID: 114034646327501380}
-  - {fileID: 114540125945339748}
-  - {fileID: 114193284286887598}
+  - {fileID: 114789672869618010}
+  - {fileID: 114652713672973188}
+  - {fileID: 114628440551398330}
+  - {fileID: 114233760519770458}
+  - {fileID: 114654985305317690}
+  - {fileID: 114900967916964922}
   MasterBanks:
-  - {fileID: 114106585772479756}
+  - {fileID: 114818466743291222}
   StringsBanks:
-  - {fileID: 114023211661217164}
-  stringsBankWriteTime: 636801787940000000
+  - {fileID: 114693341691898870}
+  stringsBankWriteTime: 636801016080000000
   cacheVersion: 3
 --- !u!114 &114001850999318880
 MonoBehaviour:
@@ -569,6 +569,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 793
+--- !u!114 &114233760519770458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Music/luit
+  guid: 5e693d4cb20a5d43941f74cc4203c4c7
+  Banks:
+  - {fileID: 114818466743291222}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114475874446963876}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 34285
 --- !u!114 &114241829273770670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -904,6 +927,21 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114475874446963876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: distance_lute
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114479301777536888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1160,6 +1198,28 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 793
+--- !u!114 &114628440551398330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SounDesign/neerzetten_kandelaar
+  guid: 5ae3450ba42f9e4c83bc1d92f414a425
+  Banks:
+  - {fileID: 114818466743291222}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 793
 --- !u!114 &114631850539287106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1183,6 +1243,50 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 213778
+--- !u!114 &114652713672973188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SounDesign/chatting_room
+  guid: 3bf4a3830e7985489db75cce323a90a8
+  Banks:
+  - {fileID: 114818466743291222}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 261537
+--- !u!114 &114654985305317690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SounDesign/oppakken_kandelaar
+  guid: c1eb5034d1f5f84d8473e45b7321801d
+  Banks:
+  - {fileID: 114818466743291222}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 905
 --- !u!114 &114663549310835808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1205,6 +1309,25 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 261537
+--- !u!114 &114693341691898870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\jgardere\Documents\FMOD_sounddesign+music-20181212T091827Z-001\FMOD_sounddesign+music\Build\Desktop\Master
+    Bank.strings.bank
+  lastModified: 636801016080000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1154
+  Exists: 1
 --- !u!114 &114698156597999574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1325,6 +1448,63 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 213778
+--- !u!114 &114789672869618010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SounDesign/schuiven_kandelaar
+  guid: 0c2ef8b87732294485d02f58f7438d3c
+  Banks:
+  - {fileID: 114818466743291222}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114826667701934454}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 41535
+--- !u!114 &114818466743291222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\jgardere\Documents\FMOD_sounddesign+music-20181212T091827Z-001\FMOD_sounddesign+music\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636801016120000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 3589440
+  Exists: 1
+--- !u!114 &114826667701934454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: schuiven_parameter
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114832712445619098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1394,6 +1574,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: schuiven_parameter
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114877660465168680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: distance_vlam
   Min: 0
   Max: 1
   Default: 0
@@ -1480,6 +1675,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1154
   Exists: 1
+--- !u!114 &114900967916964922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SounDesign/vlam
+  guid: e99ffaef08433f47919957142b97c817
+  Banks:
+  - {fileID: 114818466743291222}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114877660465168680}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 213778
 --- !u!114 &114910300467980986
 MonoBehaviour:
   m_ObjectHideFlags: 0
