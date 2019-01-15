@@ -10,8 +10,10 @@ public class TargetBehaviour : MonoBehaviour {
     public bool hasCandle;  
     Collider candleCollider;
     Collider tempCollider;
+    Collider targetCollider;
     AudioSource audioData;
     ControllerBehaviour controllerBehaviour;
+    Vector3 collisionPoint;
 
     [FMODUnity.EventRef]
     public string f_event;
@@ -28,6 +30,7 @@ public class TargetBehaviour : MonoBehaviour {
         hasCandle = false;
         //audioData = GetComponent<AudioSource>();
         controllerBehaviour = hand.GetComponent<ControllerBehaviour>();
+        targetCollider = GetComponent<Collider>();
         
 
         //audioData.Play(0);
@@ -67,7 +70,7 @@ public class TargetBehaviour : MonoBehaviour {
     IEnumerator ChangeParentSlow()
     {
 
-        if ((tempCollider == candleCollider) && !hasCandle && IsInRange(candle.transform.rotation.eulerAngles.z) )
+        if ((tempCollider == candleCollider) && !hasCandle && IsInRange(candle.transform.rotation.eulerAngles.z) && (Mathf.Abs(candleCollider.transform.position.y - targetCollider.bounds.max.y) <= 0.01f))
         //if ((tempCollider == candleCollider) && !hasCandle)
             {
 
@@ -95,6 +98,7 @@ public class TargetBehaviour : MonoBehaviour {
 
         print("collides");
         tempCollider = other;
+       
         StartCoroutine("ChangeParentSlow");
         //if (other == candleCollider && !hasCandle)
         //{
@@ -106,6 +110,8 @@ public class TargetBehaviour : MonoBehaviour {
 
     }
 
+
+    
     //public GameObject raySpawnPoint;  //add empty gameObject to right hand, place it a bit in front of the actual hand so it won't hit the actual hand
 
     //public bool holdingItem = false; //check if player is able to pick up item
