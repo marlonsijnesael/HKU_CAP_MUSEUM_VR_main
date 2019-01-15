@@ -50,9 +50,25 @@ public class ControllerBehaviour : MonoBehaviour {
 
     IEnumerator ChangeParentsSlow()
     {
-        if ((tempCollider == candleCollider) && IsInRange(transform.rotation.eulerAngles.z))
+        //if ((tempCollider == candleCollider) && IsInRange(transform.rotation.eulerAngles.z))
+        //{
+        //    target = candle.transform.parent.gameObject;           
+        //    targetBehaviour = target.GetComponent<TargetBehaviour>();
+        //    targetCollider = target.GetComponent<BoxCollider>();
+
+        //    if (targetBehaviour.hasCandle)
+        //    {
+        //        GrabHand();
+        //        candle.transform.parent = this.transform.parent;
+        //        candle.layer = LayerMask.NameToLayer("Controllers");
+        //        candleFlame.layer = LayerMask.NameToLayer("Controllers");
+        //        yield return new WaitForSeconds(1.0f);
+        //        targetBehaviour.hasCandle = false;
+        //    }
+        //}
+        if ((tempCollider == candleCollider))
         {
-            target = candle.transform.parent.gameObject;           
+            target = candle.transform.parent.gameObject;
             targetBehaviour = target.GetComponent<TargetBehaviour>();
             targetCollider = target.GetComponent<BoxCollider>();
 
@@ -60,6 +76,8 @@ public class ControllerBehaviour : MonoBehaviour {
             {
                 GrabHand();
                 candle.transform.parent = this.transform.parent;
+                candle.transform.localEulerAngles = new Vector3(-2.966f, -57.243f, -4.463f);
+                candle.transform.localPosition = new Vector3(-0.0336f, -0.3578f, 0.0189f);
                 candle.layer = LayerMask.NameToLayer("Controllers");
                 candleFlame.layer = LayerMask.NameToLayer("Controllers");
                 yield return new WaitForSeconds(1.0f);
@@ -67,6 +85,7 @@ public class ControllerBehaviour : MonoBehaviour {
             }
         }
     }
+
 
     private void OnTriggerEnter(Collider other)
     {
