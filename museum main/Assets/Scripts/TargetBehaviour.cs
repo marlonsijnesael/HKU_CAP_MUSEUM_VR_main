@@ -49,7 +49,7 @@ public class TargetBehaviour : MonoBehaviour {
 
     bool IsInRange(float xAngle)
     {
-        if((xAngle >= 355 && xAngle <= 360) || (xAngle >= 0 && xAngle <= 5))
+        if((xAngle >= 345 && xAngle <= 360) || (xAngle >= 0 && xAngle <= 25))
         {
             print(xAngle);
             return true;
@@ -65,8 +65,8 @@ public class TargetBehaviour : MonoBehaviour {
     IEnumerator ChangeParentSlow()
     {
 
-        //if ((tempCollider == candleCollider) && !hasCandle && IsInRange(candle.transform.rotation.eulerAngles.z))
-        if ((tempCollider == candleCollider) && !hasCandle)
+        if ((tempCollider == candleCollider) && !hasCandle && IsInRange(candle.transform.rotation.eulerAngles.z) )
+        //if ((tempCollider == candleCollider) && !hasCandle)
             {
 
             candle.transform.parent = this.transform;

@@ -7,12 +7,15 @@ public class ControllerBehaviour : MonoBehaviour {
     public GameObject candle;
     public GameObject candleFlame;
     Collider candleCollider;
+    Vector3 candlePosition;
+    Vector3 candleRotation;
 
     GameObject target;
     TargetBehaviour targetBehaviour;
     BoxCollider targetCollider;
     Animator anim;
     bool isClosed;
+    bool isBeginning;
 
     Collider tempCollider;
 
@@ -23,11 +26,26 @@ public class ControllerBehaviour : MonoBehaviour {
         isClosed = false;
         GrabHand();
 
+        candlePosition = new Vector3(-0.0336f, -0.3578f, 0.0189f);
+        candleRotation = new Vector3(-2.966f, -57.243f, -4.463f);
+        isBeginning = true;
+
     }
 	
 	// Update is called once per frame
 	void Update () {
         //print(transform.rotation.eulerAngles.z);
+        if (isBeginning)
+        {
+            if((candle.transform.localEulerAngles != candleRotation) || (candle.transform.localPosition != candlePosition))
+            {
+                candle.transform.localEulerAngles = candleRotation;
+                candle.transform.localPosition = candlePosition;
+
+            }
+            isBeginning = false;
+
+        }
 	}
 
     bool IsInRange(float Angle)
@@ -76,8 +94,8 @@ public class ControllerBehaviour : MonoBehaviour {
             {
                 GrabHand();
                 candle.transform.parent = this.transform.parent;
-                candle.transform.localEulerAngles = new Vector3(-2.966f, -57.243f, -4.463f);
-                candle.transform.localPosition = new Vector3(-0.0336f, -0.3578f, 0.0189f);
+                candle.transform.localEulerAngles = candleRotation;
+                candle.transform.localPosition = candlePosition;
                 candle.layer = LayerMask.NameToLayer("Controllers");
                 candleFlame.layer = LayerMask.NameToLayer("Controllers");
                 yield return new WaitForSeconds(1.0f);

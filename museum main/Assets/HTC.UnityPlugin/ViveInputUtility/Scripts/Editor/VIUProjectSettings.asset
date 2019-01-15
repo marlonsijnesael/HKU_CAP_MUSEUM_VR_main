@@ -13,3 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ignoreKeys:
   - VirtualRealitySupportedwithOculus
+  - DoNotShowUpdate.v1.10.1
