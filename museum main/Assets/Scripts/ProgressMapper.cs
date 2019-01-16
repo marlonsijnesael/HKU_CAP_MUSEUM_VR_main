@@ -57,6 +57,6 @@ public class ProgressMapper : MonoBehaviour {
     {
         //fadeout required
         //SceneManager.LoadScene(museumScene.buildIndex);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 }
