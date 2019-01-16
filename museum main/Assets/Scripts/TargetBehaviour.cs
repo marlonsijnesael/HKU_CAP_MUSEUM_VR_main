@@ -73,7 +73,7 @@ public class TargetBehaviour : MonoBehaviour {
     IEnumerator ChangeParentSlow()
     {
 
-        if ((tempCollider == candleCollider) && !hasCandle && IsInRange(candle.transform.rotation.eulerAngles.z) && (Mathf.Abs(candleCollider.transform.position.y - targetCollider.bounds.max.y) <= 0.01f))
+        if ((tempCollider == candleCollider) && !hasCandle && IsInRange(candle.transform.rotation.eulerAngles.z) && (Mathf.Abs(candleCollider.transform.position.y - targetCollider.bounds.max.y) <= 0.007f))
         //if ((tempCollider == candleCollider) && !hasCandle)
         {
             if (isObjectiveTarget)
@@ -89,7 +89,7 @@ public class TargetBehaviour : MonoBehaviour {
             f_Instance.start();
 
             controllerBehaviour.OpenHand();
-            yield return new WaitForSeconds(1.0f);
+            yield return new WaitForSeconds(0.5f);
             hasCandle = true;
             print("Isin1");
             
