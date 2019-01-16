@@ -45,10 +45,10 @@ public class LanguageManager : MonoBehaviour {
     {
         switch (languageIndex)
         {
-            case 0: return eng_Text[id]; break;
-            case 1: return nl_Text[id];break;
-            default: return eng_Text[id]; break;
+            case 0: return eng_Text[id]; 
+            case 1: return nl_Text[id];
+            default: return eng_Text[id];
         }
-        return null;
+   
     }
 }

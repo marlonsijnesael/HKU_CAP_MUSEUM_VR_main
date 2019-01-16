@@ -7,8 +7,8 @@ public class CameraFacingBillboard : MonoBehaviour
     
  
     void LateUpdate()
-    {
+    { 
         transform.LookAt(transform.position + m_Camera.transform.rotation * Vector3.forward,
-            transform.up);
+            Vector3.up);
     }
 }
