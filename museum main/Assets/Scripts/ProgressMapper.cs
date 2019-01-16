@@ -10,8 +10,8 @@ public class ProgressMapper : MonoBehaviour {
     public GameObject[] targets = new GameObject[3];
     int targetCount = 0;
     public int amountOfTargets = 0;
-    public ProgressMapper _instance;
-    public GameObject endingCollider;
+    public static ProgressMapper _instance;
+    //public GameObject endingCollider;
 
     //singleton for easy acces
     private void Awake()
@@ -56,6 +56,7 @@ public class ProgressMapper : MonoBehaviour {
     public void GoToMuseum()
     {
         //fadeout required
-        SceneManager.LoadScene(museumScene.buildIndex);
+        //SceneManager.LoadScene(museumScene.buildIndex);
+        SceneManager.LoadScene(1);
     }
 }

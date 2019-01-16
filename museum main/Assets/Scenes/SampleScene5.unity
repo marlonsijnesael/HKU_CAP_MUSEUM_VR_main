@@ -845,7 +845,8 @@ MonoBehaviour:
   candleFlame: {fileID: 652910195}
   hand: {fileID: 239435537}
   hasCandle: 0
-  f_event: event:/SounDesign/oppakken_kandelaar
+  isObjectiveTarget: 0
+  f_event: event:/SounDesign/neerzetten_kandelaar
 --- !u!54 &114350866
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -915,8 +916,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 136524784}
+  - component: {fileID: 136524785}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Progress Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -935,6 +937,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &136524785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 136524783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea3adf8a06706c24382224c7f7726e0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targets:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  amountOfTargets: 2
+  _instance: {fileID: 0}
 --- !u!1 &166077070
 GameObject:
   m_ObjectHideFlags: 0
@@ -1842,6 +1861,7 @@ MonoBehaviour:
   candleFlame: {fileID: 0}
   hand: {fileID: 0}
   hasCandle: 0
+  isObjectiveTarget: 0
   f_event: event:/SounDesign/neerzetten_kandelaar
 --- !u!64 &415735929
 MeshCollider:
@@ -3125,6 +3145,7 @@ MonoBehaviour:
   candleFlame: {fileID: 652910195}
   hand: {fileID: 239435537}
   hasCandle: 0
+  isObjectiveTarget: 0
   f_event: event:/SounDesign/oppakken_kandelaar
 --- !u!65 &671715574
 BoxCollider:
@@ -3214,6 +3235,7 @@ MonoBehaviour:
   candleFlame: {fileID: 652910195}
   hand: {fileID: 239435537}
   hasCandle: 0
+  isObjectiveTarget: 1
   f_event: event:/SounDesign/neerzetten_kandelaar
 --- !u!4 &672198211
 Transform:
@@ -3235,7 +3257,7 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 672198207}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 08b3070f008bc6d4bb3d21ae4bbcecc9, type: 3}
@@ -4543,6 +4565,7 @@ MonoBehaviour:
   candleFlame: {fileID: 652910195}
   hand: {fileID: 239435537}
   hasCandle: 0
+  isObjectiveTarget: 1
   f_event: event:/SounDesign/neerzetten_kandelaar
 --- !u!65 &894808689
 BoxCollider:
@@ -5522,6 +5545,7 @@ MonoBehaviour:
   candleFlame: {fileID: 0}
   hand: {fileID: 0}
   hasCandle: 0
+  isObjectiveTarget: 0
   f_event: 
 --- !u!1 &1235976786
 GameObject:
@@ -6251,22 +6275,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1282600057708190, guid: 765be73fa4ce51f4bbe7ef55eab212c5,
     type: 2}
   m_PrefabInternal: {fileID: 1334757830}
---- !u!114 &1408084607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1408084606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50f07216e80eeba4da81c855618dd262, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  candle: {fileID: 1913838637}
-  candleFlame: {fileID: 652910195}
-  hand: {fileID: 239435537}
-  hasCandle: 0
-  f_event: event:/SounDesign/oppakken_kandelaar
 --- !u!65 &1408084608
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6294,6 +6302,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1408084610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1408084606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50f07216e80eeba4da81c855618dd262, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  candle: {fileID: 1913838637}
+  candleFlame: {fileID: 652910195}
+  hand: {fileID: 239435537}
+  hasCandle: 0
+  isObjectiveTarget: 0
+  f_event: event:/SounDesign/neerzetten_kandelaar
 --- !u!1 &1417983310
 GameObject:
   m_ObjectHideFlags: 0
@@ -6586,6 +6611,7 @@ MonoBehaviour:
   candleFlame: {fileID: 652910195}
   hand: {fileID: 239435537}
   hasCandle: 0
+  isObjectiveTarget: 0
   f_event: event:/SounDesign/neerzetten_kandelaar
 --- !u!65 &1451202564
 BoxCollider:
@@ -7798,6 +7824,7 @@ MonoBehaviour:
   candleFlame: {fileID: 652910195}
   hand: {fileID: 239435537}
   hasCandle: 0
+  isObjectiveTarget: 0
   f_event: event:/SounDesign/neerzetten_kandelaar
 --- !u!54 &1787042814
 Rigidbody:
@@ -7924,6 +7951,7 @@ MonoBehaviour:
   candleFlame: {fileID: 652910195}
   hand: {fileID: 239435537}
   hasCandle: 0
+  isObjectiveTarget: 0
   f_event: event:/SounDesign/neerzetten_kandelaar
 --- !u!54 &1843932177
 Rigidbody:
