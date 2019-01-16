@@ -372,6 +372,11 @@ Prefab:
       propertyPath: m_Lightmapping
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 108261842193924096, guid: 7300f8b1d26c5594e924c7ea88e807ae,
+        type: 2}
+      propertyPath: m_Range
+      value: 1.56
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7300f8b1d26c5594e924c7ea88e807ae, type: 2}
   m_IsPrefabAsset: 0
@@ -577,7 +582,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 0.81
+  orthographic size: 0.61
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -600,7 +605,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 110376778}
   m_LocalRotation: {x: 0.069041215, y: -0.017733423, z: -0.0017661549, w: 0.99745464}
-  m_LocalPosition: {x: 0.62, y: 1.3, z: -1.84}
+  m_LocalPosition: {x: 0.62, y: 1.449, z: -1.84}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1610066593}
@@ -676,6 +681,9 @@ GameObject:
   - component: {fileID: 114350864}
   - component: {fileID: 114350863}
   - component: {fileID: 114350862}
+  - component: {fileID: 114350867}
+  - component: {fileID: 114350866}
+  - component: {fileID: 114350865}
   m_Layer: 0
   m_Name: Stool (2)
   m_TagString: Untagged
@@ -741,6 +749,49 @@ Transform:
   m_Father: {fileID: 1647283780}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -41.387, z: 0}
+--- !u!114 &114350865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 114350861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50f07216e80eeba4da81c855618dd262, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  candle: {fileID: 1913838637}
+  candleFlame: {fileID: 652910195}
+  hand: {fileID: 239435537}
+  hasCandle: 0
+  f_event: event:/SounDesign/oppakken_kandelaar
+--- !u!54 &114350866
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 114350861}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &114350867
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 114350861}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0043966277, y: 0.0031397163, z: 0.0042726803}
+  m_Center: {x: 8.1490725e-10, y: 0, z: 0}
 --- !u!1 &115425909
 GameObject:
   m_ObjectHideFlags: 0
@@ -4530,13 +4581,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1294618456}
-  m_LocalRotation: {x: -0.6348347, y: 0.03232428, z: -0.02354101, w: -0.7716126}
-  m_LocalPosition: {x: 0.303545, y: 1.2765677, z: -1.3857}
-  m_LocalScale: {x: 0.07535256, y: 0.07535266, z: 0.0753527}
+  m_LocalRotation: {x: -0.62374514, y: 0.03561175, z: -0.019463655, w: -0.7805735}
+  m_LocalPosition: {x: 0.275, y: 1.312, z: -1.415}
+  m_LocalScale: {x: 0.0940626, y: 0.09406272, z: 0.065108955}
   m_Children: []
   m_Father: {fileID: 1610066593}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -281.123, y: -5.9490004, z: -1.4000001}
+  m_LocalEulerAnglesHint: {x: -282.801, y: -8.125, z: -3.6330001}
 --- !u!4 &1304317675 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400044, guid: 6637b62756d9c3042894d59563a3ae64,
@@ -4940,6 +4991,54 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1408084606 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1282600057708190, guid: 765be73fa4ce51f4bbe7ef55eab212c5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1334757830}
+--- !u!114 &1408084607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1408084606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50f07216e80eeba4da81c855618dd262, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  candle: {fileID: 1913838637}
+  candleFlame: {fileID: 652910195}
+  hand: {fileID: 239435537}
+  hasCandle: 0
+  f_event: event:/SounDesign/oppakken_kandelaar
+--- !u!65 &1408084608
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1408084606}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0043966277, y: 0.0031397163, z: 0.0042726803}
+  m_Center: {x: 1.1641532e-10, y: -0.0000000015133992, z: 0.0000000018626451}
+--- !u!54 &1408084609
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1408084606}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1417983310
 GameObject:
   m_ObjectHideFlags: 0
@@ -5131,13 +5230,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1436775590}
-  m_LocalRotation: {x: -0.6348347, y: 0.03232428, z: -0.02354101, w: -0.7716126}
-  m_LocalPosition: {x: 0.30452573, y: 1.2749734, z: -1.3959224}
-  m_LocalScale: {x: 0.07535256, y: 0.07535266, z: 0.0753527}
+  m_LocalRotation: {x: -0.62374514, y: 0.03561175, z: -0.019463655, w: -0.7805735}
+  m_LocalPosition: {x: 0.27598074, y: 1.3104057, z: -1.4252224}
+  m_LocalScale: {x: 0.0940626, y: 0.09406272, z: 0.065108955}
   m_Children: []
   m_Father: {fileID: 1610066593}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: -281.123, y: -5.9490004, z: -1.4000001}
+  m_LocalEulerAnglesHint: {x: -282.801, y: -8.125, z: -3.6330001}
 --- !u!1 &1451202559
 GameObject:
   m_ObjectHideFlags: 0
