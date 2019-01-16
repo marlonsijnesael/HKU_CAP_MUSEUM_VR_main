@@ -7,13 +7,15 @@ public class TargetBehaviour : MonoBehaviour {
     public GameObject candle;
     public GameObject candleFlame;
     public GameObject hand;
-    public bool hasCandle;  
+    public bool hasCandle;
+    public bool isObjectiveTarget;
     Collider candleCollider;
     Collider tempCollider;
     Collider targetCollider;
     AudioSource audioData;
     ControllerBehaviour controllerBehaviour;
     Vector3 collisionPoint;
+    ProgressMapper progressMapper;
 
     [FMODUnity.EventRef]
     public string f_event;
@@ -31,6 +33,7 @@ public class TargetBehaviour : MonoBehaviour {
         //audioData = GetComponent<AudioSource>();
         controllerBehaviour = hand.GetComponent<ControllerBehaviour>();
         targetCollider = GetComponent<Collider>();
+        progressMapper = ProgressMapper._instance;
         
 
         //audioData.Play(0);
@@ -72,8 +75,12 @@ public class TargetBehaviour : MonoBehaviour {
 
         if ((tempCollider == candleCollider) && !hasCandle && IsInRange(candle.transform.rotation.eulerAngles.z) && (Mathf.Abs(candleCollider.transform.position.y - targetCollider.bounds.max.y) <= 0.01f))
         //if ((tempCollider == candleCollider) && !hasCandle)
+        {
+            if (isObjectiveTarget)
             {
+                progressMapper.AddTarget(this.gameObject);
 
+            }
             candle.transform.parent = this.transform;
             candle.layer = 0;
             candleFlame.layer = 0;
