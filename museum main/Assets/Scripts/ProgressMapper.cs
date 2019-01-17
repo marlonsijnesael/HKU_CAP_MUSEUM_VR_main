@@ -34,12 +34,17 @@ public class ProgressMapper : MonoBehaviour {
     //checks if target is already crossed off, if not it will be added to the array. If all the targets are completed, the museum scene will load
     public void AddTarget(GameObject _target)
     {
+  
         foreach (GameObject _go in targets)
         {
+            int i = 0;
             if (_go == _target)
             {
                 return;
             }
+            if (_go == null && _go != targets[0]) {
+                return;
+                    }
 
             if (targetCount < amountOfTargets)
             {
@@ -50,6 +55,24 @@ public class ProgressMapper : MonoBehaviour {
             {
                 GoToMuseum();
             }
+
+
+            i++;
+
+            //if (_go != null)
+            //{
+            //    if (targetCount < amountOfTargets)
+            //    {
+            //        targets[targetCount] = _target;
+            //        targetCount++;
+            //    }
+            //    else
+            //    {
+            //        GoToMuseum();
+            //    }
+            //}
+       
+      
         }
     }
 
