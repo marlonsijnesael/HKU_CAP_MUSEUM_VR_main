@@ -222,12 +222,12 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 3.69
+  m_Intensity: 5.65
   m_Range: 0.75
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -241,7 +241,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
@@ -5808,7 +5808,7 @@ Prefab:
     - target: {fileID: 108073513468336614, guid: 765be73fa4ce51f4bbe7ef55eab212c5,
         type: 2}
       propertyPath: m_Lightmapping
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4248494969163814, guid: 765be73fa4ce51f4bbe7ef55eab212c5, type: 2}
       propertyPath: m_LocalPosition.x
@@ -5820,7 +5820,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4579441918417998, guid: 765be73fa4ce51f4bbe7ef55eab212c5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.866
+      value: 2.804
       objectReference: {fileID: 0}
     - target: {fileID: 1517071922442940, guid: 765be73fa4ce51f4bbe7ef55eab212c5, type: 2}
       propertyPath: m_StaticEditorFlags
@@ -5869,7 +5869,7 @@ Prefab:
     - target: {fileID: 108073513468336614, guid: 765be73fa4ce51f4bbe7ef55eab212c5,
         type: 2}
       propertyPath: m_Range
-      value: 3.64
+      value: 1.78
       objectReference: {fileID: 0}
     - target: {fileID: 108073513468336614, guid: 765be73fa4ce51f4bbe7ef55eab212c5,
         type: 2}
@@ -5879,11 +5879,36 @@ Prefab:
     - target: {fileID: 108073513468336614, guid: 765be73fa4ce51f4bbe7ef55eab212c5,
         type: 2}
       propertyPath: m_BounceIntensity
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 765be73fa4ce51f4bbe7ef55eab212c5, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1334757831 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1960986027081744, guid: 765be73fa4ce51f4bbe7ef55eab212c5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1334757830}
+--- !u!108 &1334757832 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 108073513468336614, guid: 765be73fa4ce51f4bbe7ef55eab212c5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1334757830}
+--- !u!114 &1334757833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1334757831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0cc02833a9239144934a03f9c5a8335, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 1334757832}
+  minIntensity: 2.48
+  maxIntensity: 7.06
+  smoothing: 23
 --- !u!1 &1378876692
 GameObject:
   m_ObjectHideFlags: 0
