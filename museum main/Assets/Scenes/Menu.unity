@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.22571328, b: 0.30692166, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -113,101 +113,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &401570911 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114873775959588972, guid: 1b5cd92f02b7ca44cb48ef499fdeb4d5,
-    type: 2}
-  m_PrefabInternal: {fileID: 1947772991}
-  m_Script: {fileID: 11500000, guid: 231bece8e364caa45a0f526b4b37dc8b, type: 3}
---- !u!1 &403012293 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1691170240210802, guid: 1b5cd92f02b7ca44cb48ef499fdeb4d5,
-    type: 2}
-  m_PrefabInternal: {fileID: 1947772991}
---- !u!1001 &1947772991
+--- !u!1001 &196321390
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114183030088940384, guid: 1b5cd92f02b7ca44cb48ef499fdeb4d5,
-        type: 2}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4673982195174646, guid: 1b5cd92f02b7ca44cb48ef499fdeb4d5, type: 2}
+    - target: {fileID: 4342114730282014, guid: faac51c3f03fa7542bab1dc7393df0cb, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4673982195174646, guid: 1b5cd92f02b7ca44cb48ef499fdeb4d5, type: 2}
+    - target: {fileID: 4342114730282014, guid: faac51c3f03fa7542bab1dc7393df0cb, type: 2}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4673982195174646, guid: 1b5cd92f02b7ca44cb48ef499fdeb4d5, type: 2}
+    - target: {fileID: 4342114730282014, guid: faac51c3f03fa7542bab1dc7393df0cb, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4673982195174646, guid: 1b5cd92f02b7ca44cb48ef499fdeb4d5, type: 2}
+    - target: {fileID: 4342114730282014, guid: faac51c3f03fa7542bab1dc7393df0cb, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4673982195174646, guid: 1b5cd92f02b7ca44cb48ef499fdeb4d5, type: 2}
+    - target: {fileID: 4342114730282014, guid: faac51c3f03fa7542bab1dc7393df0cb, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4673982195174646, guid: 1b5cd92f02b7ca44cb48ef499fdeb4d5, type: 2}
+    - target: {fileID: 4342114730282014, guid: faac51c3f03fa7542bab1dc7393df0cb, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4673982195174646, guid: 1b5cd92f02b7ca44cb48ef499fdeb4d5, type: 2}
+    - target: {fileID: 4342114730282014, guid: faac51c3f03fa7542bab1dc7393df0cb, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4673982195174646, guid: 1b5cd92f02b7ca44cb48ef499fdeb4d5, type: 2}
+    - target: {fileID: 4342114730282014, guid: faac51c3f03fa7542bab1dc7393df0cb, type: 2}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224777052433354286, guid: 1b5cd92f02b7ca44cb48ef499fdeb4d5,
+    - target: {fileID: 224141558266836792, guid: faac51c3f03fa7542bab1dc7393df0cb,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224904802625452514, guid: 1b5cd92f02b7ca44cb48ef499fdeb4d5,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114183030088940384, guid: 1b5cd92f02b7ca44cb48ef499fdeb4d5,
-        type: 2}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114183030088940384, guid: 1b5cd92f02b7ca44cb48ef499fdeb4d5,
-        type: 2}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114183030088940384, guid: 1b5cd92f02b7ca44cb48ef499fdeb4d5,
+    - target: {fileID: 224382264564777372, guid: faac51c3f03fa7542bab1dc7393df0cb,
         type: 2}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 401570911}
-    - target: {fileID: 114873775959588972, guid: 1b5cd92f02b7ca44cb48ef499fdeb4d5,
-        type: 2}
-      propertyPath: VolumeSlider
-      value: 
-      objectReference: {fileID: 403012293}
-    - target: {fileID: 114183030088940384, guid: 1b5cd92f02b7ca44cb48ef499fdeb4d5,
-        type: 2}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetMasteVolume
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114183030088940384, guid: 1b5cd92f02b7ca44cb48ef499fdeb4d5,
-        type: 2}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+    - target: {fileID: 1723403316050838, guid: faac51c3f03fa7542bab1dc7393df0cb, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549449292805948, guid: faac51c3f03fa7542bab1dc7393df0cb, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1b5cd92f02b7ca44cb48ef499fdeb4d5, type: 2}
+  m_SourcePrefab: {fileID: 100100000, guid: faac51c3f03fa7542bab1dc7393df0cb, type: 2}
   m_IsPrefabAsset: 0

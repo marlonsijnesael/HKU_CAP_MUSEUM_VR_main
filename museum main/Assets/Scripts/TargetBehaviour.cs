@@ -7,15 +7,11 @@ public class TargetBehaviour : MonoBehaviour {
     public GameObject candle;
     public GameObject candleFlame;
     public GameObject hand;
-    public bool hasCandle;
-    public bool isObjectiveTarget;
+    public bool hasCandle;  
     Collider candleCollider;
     Collider tempCollider;
-    Collider targetCollider;
     AudioSource audioData;
     ControllerBehaviour controllerBehaviour;
-    Vector3 collisionPoint;
-    ProgressMapper progressMapper;
 
     [FMODUnity.EventRef]
     public string f_event;
@@ -32,8 +28,6 @@ public class TargetBehaviour : MonoBehaviour {
         hasCandle = false;
         //audioData = GetComponent<AudioSource>();
         controllerBehaviour = hand.GetComponent<ControllerBehaviour>();
-        targetCollider = GetComponent<Collider>();
-        progressMapper = ProgressMapper._instance;
         
 
         //audioData.Play(0);
@@ -55,7 +49,7 @@ public class TargetBehaviour : MonoBehaviour {
 
     bool IsInRange(float xAngle)
     {
-        if((xAngle >= 345 && xAngle <= 360) || (xAngle >= 0 && xAngle <= 25))
+        if((xAngle >= 355 && xAngle <= 360) || (xAngle >= 0 && xAngle <= 5))
         {
             print(xAngle);
             return true;
@@ -68,19 +62,13 @@ public class TargetBehaviour : MonoBehaviour {
 
     }
 
-    
-
     IEnumerator ChangeParentSlow()
     {
 
-        if ((tempCollider == candleCollider) && !hasCandle && IsInRange(candle.transform.rotation.eulerAngles.z) && (Mathf.Abs(candleCollider.transform.position.y - targetCollider.bounds.max.y) <= 0.007f))
-        //if ((tempCollider == candleCollider) && !hasCandle)
-        {
-            if (isObjectiveTarget)
+        //if ((tempCollider == candleCollider) && !hasCandle && IsInRange(candle.transform.rotation.eulerAngles.z))
+        if ((tempCollider == candleCollider) && !hasCandle)
             {
-                progressMapper.AddTarget(this.gameObject);
 
-            }
             candle.transform.parent = this.transform;
             candle.layer = 0;
             candleFlame.layer = 0;
@@ -89,7 +77,7 @@ public class TargetBehaviour : MonoBehaviour {
             f_Instance.start();
 
             controllerBehaviour.OpenHand();
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1.0f);
             hasCandle = true;
             print("Isin1");
             
@@ -105,7 +93,6 @@ public class TargetBehaviour : MonoBehaviour {
 
         print("collides");
         tempCollider = other;
-       
         StartCoroutine("ChangeParentSlow");
         //if (other == candleCollider && !hasCandle)
         //{
@@ -117,8 +104,6 @@ public class TargetBehaviour : MonoBehaviour {
 
     }
 
-
-    
     //public GameObject raySpawnPoint;  //add empty gameObject to right hand, place it a bit in front of the actual hand so it won't hit the actual hand
 
     //public bool holdingItem = false; //check if player is able to pick up item
