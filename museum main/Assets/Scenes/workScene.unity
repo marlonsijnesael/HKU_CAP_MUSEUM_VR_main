@@ -90,7 +90,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000002, guid: 2e8b67cab71a05a4e94e88276dc8a9eb,
+    type: 2}
   m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
@@ -845,7 +846,6 @@ MonoBehaviour:
   candleFlame: {fileID: 652910195}
   hand: {fileID: 239435537}
   hasCandle: 0
-  isObjectiveTarget: 0
   f_event: event:/SounDesign/oppakken_kandelaar
 --- !u!54 &114350866
 Rigidbody:
@@ -1162,7 +1162,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1326,8 +1326,8 @@ RectTransform:
   m_Father: {fileID: 1870329508}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1628,7 +1628,6 @@ MonoBehaviour:
   candleFlame: {fileID: 0}
   hand: {fileID: 0}
   hasCandle: 0
-  isObjectiveTarget: 0
   f_event: event:/SounDesign/neerzetten_kandelaar
 --- !u!64 &415735929
 MeshCollider:
@@ -2770,7 +2769,6 @@ MonoBehaviour:
   candleFlame: {fileID: 652910195}
   hand: {fileID: 239435537}
   hasCandle: 0
-  isObjectiveTarget: 0
   f_event: event:/SounDesign/oppakken_kandelaar
 --- !u!65 &671715574
 BoxCollider:
@@ -2860,7 +2858,6 @@ MonoBehaviour:
   candleFlame: {fileID: 652910195}
   hand: {fileID: 239435537}
   hasCandle: 0
-  isObjectiveTarget: 0
   f_event: event:/SounDesign/neerzetten_kandelaar
 --- !u!4 &672198211
 Transform:
@@ -4088,7 +4085,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4190,7 +4187,6 @@ MonoBehaviour:
   candleFlame: {fileID: 652910195}
   hand: {fileID: 239435537}
   hasCandle: 0
-  isObjectiveTarget: 0
   f_event: event:/SounDesign/neerzetten_kandelaar
 --- !u!65 &894808689
 BoxCollider:
@@ -4815,7 +4811,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5215,7 +5211,6 @@ MonoBehaviour:
   candleFlame: {fileID: 0}
   hand: {fileID: 0}
   hasCandle: 0
-  isObjectiveTarget: 0
   f_event: 
 --- !u!1 &1235976786
 GameObject:
@@ -5242,7 +5237,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1235976786}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.73, z: 0}
+  m_LocalPosition: {x: -5, y: 1.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 652910196}
@@ -5260,7 +5255,7 @@ Light:
   m_Type: 2
   m_Color: {r: 1, g: 0.9372549, b: 0.6666667, a: 1}
   m_Intensity: 3.3
-  m_Range: 1.56
+  m_Range: 2.1
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -5317,7 +5312,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5563,8 +5558,8 @@ RectTransform:
   m_Father: {fileID: 115425910}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5898,6 +5893,15 @@ Prefab:
       propertyPath: m_BounceIntensity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4095952916950364, guid: 765be73fa4ce51f4bbe7ef55eab212c5, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.547
+      objectReference: {fileID: 0}
+    - target: {fileID: 23177779489156522, guid: 765be73fa4ce51f4bbe7ef55eab212c5,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 027cb3d3d7dc79d41ad763e01759de07, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 765be73fa4ce51f4bbe7ef55eab212c5, type: 2}
   m_IsPrefabAsset: 0
@@ -6118,7 +6122,6 @@ MonoBehaviour:
   candleFlame: {fileID: 652910195}
   hand: {fileID: 239435537}
   hasCandle: 0
-  isObjectiveTarget: 0
   f_event: event:/SounDesign/oppakken_kandelaar
 --- !u!65 &1408084608
 BoxCollider:
@@ -6439,7 +6442,6 @@ MonoBehaviour:
   candleFlame: {fileID: 652910195}
   hand: {fileID: 239435537}
   hasCandle: 0
-  isObjectiveTarget: 0
   f_event: event:/SounDesign/neerzetten_kandelaar
 --- !u!65 &1451202564
 BoxCollider:
@@ -6503,8 +6505,8 @@ RectTransform:
   m_Father: {fileID: 1962969102}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -7187,8 +7189,8 @@ RectTransform:
   m_Father: {fileID: 798259869}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -7534,7 +7536,6 @@ MonoBehaviour:
   candleFlame: {fileID: 652910195}
   hand: {fileID: 239435537}
   hasCandle: 0
-  isObjectiveTarget: 0
   f_event: event:/SounDesign/neerzetten_kandelaar
 --- !u!54 &1787042814
 Rigidbody:
@@ -7661,7 +7662,6 @@ MonoBehaviour:
   candleFlame: {fileID: 652910195}
   hand: {fileID: 239435537}
   hasCandle: 0
-  isObjectiveTarget: 0
   f_event: event:/SounDesign/neerzetten_kandelaar
 --- !u!54 &1843932177
 Rigidbody:
@@ -8727,7 +8727,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2086993248}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.098, z: 0}
+  m_LocalPosition: {x: 0.831, y: 0.827, z: -0.332}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1526959357}
