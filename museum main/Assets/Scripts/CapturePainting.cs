@@ -51,8 +51,8 @@ public class CapturePainting : MonoBehaviour
         {
             Directory.CreateDirectory(screenshotsDirectory);
             cam.targetTexture = currentRT;
-            cam.targetTexture.width = 1024;
-            cam.targetTexture.height = 1024;
+            //cam.targetTexture.width = 1024;
+            //cam.targetTexture.height = 1024;
         }
 
         canFade = true;
