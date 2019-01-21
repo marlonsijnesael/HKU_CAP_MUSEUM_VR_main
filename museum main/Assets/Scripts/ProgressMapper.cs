@@ -9,8 +9,11 @@ public class ProgressMapper : MonoBehaviour {
     [HideInInspector]
     public GameObject[] targets = new GameObject[3];
     int targetCount = 0;
+    int numberTriggerPresses = 0;
     public int amountOfTargets = 0;
     public static ProgressMapper _instance;
+    public GameObject targetObject;
+
     //public GameObject endingCollider;
 
     //singleton for easy acces
@@ -24,12 +27,22 @@ public class ProgressMapper : MonoBehaviour {
         {
             Destroy(this);
         }
+
+
     }
 
     public void Start()
     {
         targets = new GameObject[amountOfTargets];
     }
+
+    public void AddTriggerPress()
+    {
+        numberTriggerPresses++;
+
+    }
+
+
 
     //checks if target is already crossed off, if not it will be added to the array. If all the targets are completed, the museum scene will load
     public void AddTarget(GameObject _target)
@@ -51,7 +64,8 @@ public class ProgressMapper : MonoBehaviour {
                 targets[targetCount] = _target;
                 targetCount++;
             }
-            else
+
+            if (targetCount >= amountOfTargets)
             {
                 GoToMuseum();
             }
@@ -73,6 +87,21 @@ public class ProgressMapper : MonoBehaviour {
             //}
        
       
+        }
+    }
+
+    public void Update()
+    {
+        if(numberTriggerPresses == 1)
+        {
+            targetObject.SetActive(true);
+            Color targetColor;
+
+            targetColor = targetObject.GetComponent<Renderer>().material.color;
+            targetColor.a = 1.0f;
+            targetObject.GetComponent<Renderer>().material.color = targetColor;
+
+
         }
     }
 

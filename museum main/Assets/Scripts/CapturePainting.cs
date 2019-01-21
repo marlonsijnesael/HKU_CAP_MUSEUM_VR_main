@@ -29,8 +29,9 @@ public class CapturePainting : MonoBehaviour
     public GameObject item;
     public bool holdingItem = false;
     private bool canFade;
+    ProgressMapper progressMapper;
 
-    
+
 
 
     // Use this for initialization
@@ -40,6 +41,7 @@ public class CapturePainting : MonoBehaviour
 
         bigScreen2MeshRenderer = screenLayer2.GetComponent<MeshRenderer>();
         cam = GetComponent<Camera>();
+        progressMapper = ProgressMapper._instance;
 
         cam.forceIntoRenderTexture = true;
         if (Directory.Exists(screenshotsDirectory))
@@ -110,6 +112,8 @@ public class CapturePainting : MonoBehaviour
         {
             TakeScreenShot();
             ReadPixelsOut("SS_" + screenshotCount + ".png");
+            progressMapper.AddTriggerPress();
+
             //do stuff
         }
 

@@ -14,6 +14,7 @@ public class ControllerBehaviour : MonoBehaviour {
     GameObject target;
     TargetBehaviour targetBehaviour;
     BoxCollider targetCollider;
+    
     Animator anim;
     bool isClosed;
     bool isBeginning;
@@ -31,6 +32,7 @@ public class ControllerBehaviour : MonoBehaviour {
         candlePosition = new Vector3(-0.05f, -0.18f, -0.01f);
         candleRotation = new Vector3(9.3f, 0f, -20.78f);
         isBeginning = true;
+        
 
 
     }
@@ -115,6 +117,7 @@ public class ControllerBehaviour : MonoBehaviour {
     {
         tempCollider = other;
         StartCoroutine("ChangeParentsSlow");
+
         //print("collides");
         //if (other == candleCollider && !hasCandle)
         //{
