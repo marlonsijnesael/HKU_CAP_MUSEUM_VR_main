@@ -1,78 +1,78 @@
-#if UNITY_EDITOR
-using System.Collections;
+//#if UNITY_EDITOR
+//using System.Collections;
 
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEditor.ShaderGraph;
-using System.Reflection;
+//using System.Collections.Generic;
+//using UnityEngine;
+//using UnityEditor.ShaderGraph;
+//using System.Reflection;
 
-[Title("Input", "Scene", "LightAttenuation")]
-public class LightAttenuationNode : CodeFunctionNode
-{
-	public override bool hasPreview {get {return false;}}
+//[Title("Input", "Scene", "LightAttenuation")]
+public class LightAttenuationNode { 
 
-
-	private static string functionBodyForReals = @"{
-
-			float4 shadowCoord;
-			#ifdef _SHADOWS_ENABLED
-        	#if SHADOWS_SCREEN
-				float4 clipPos = TransformWorldToHClip(WorldPos);
-        		shadowCoord = ComputeShadowCoord(clipPos);
-        	#else
-        		shadowCoord = TransformWorldToShadowCoord(WorldPos);
-        	#endif
-			Attenuation = MainLightRealtimeShadowAttenuation(shadowCoord);
-        	#endif
-            Attenuation = MainLightRealtimeShadowAttenuation(shadowCoord);
-		}";
-	
-
-	private static string functionBodyPreview = @"{
-			Attenuation = 1;
-		}";
-
-	private static bool isPreview;
+//	public override bool hasPreview {get {return false;}}
 
 
-	private static string functionBody
-	{
-		get
-		{
-			if(isPreview)
-				return functionBodyPreview;
-			else
-				return functionBodyForReals;
-		}
-	}
+//	private static string functionBodyForReals = @"{
+
+//			float4 shadowCoord;
+//			#ifdef _SHADOWS_ENABLED
+//        	#if SHADOWS_SCREEN
+//				float4 clipPos = TransformWorldToHClip(WorldPos);
+//        		shadowCoord = ComputeShadowCoord(clipPos);
+//        	#else
+//        		shadowCoord = TransformWorldToShadowCoord(WorldPos);
+//        	#endif
+//			Attenuation = MainLightRealtimeShadowAttenuation(shadowCoord);
+//        	#endif
+//            Attenuation = MainLightRealtimeShadowAttenuation(shadowCoord);
+//		}";
 
 
-	public LightAttenuationNode()
-	{
-		name = "LightAttenuation";
-	}
-	
-	protected override MethodInfo GetFunctionToConvert()
-	{
-		return GetType().GetMethod("LightAttenuationFunction", BindingFlags.Static | BindingFlags.NonPublic);
-	}
+//	private static string functionBodyPreview = @"{
+//			Attenuation = 1;
+//		}";
+
+//	private static bool isPreview;
 
 
-	public override void GenerateNodeFunction(FunctionRegistry registry, GraphContext graphContext, GenerationMode generationMode)
-	{
-		isPreview = generationMode == GenerationMode.Preview;
+//	private static string functionBody
+//	{
+//		get
+//		{
+//			if(isPreview)
+//				return functionBodyPreview;
+//			else
+//				return functionBodyForReals;
+//		}
+//	}
 
-		base.GenerateNodeFunction(registry, graphContext, generationMode);
-	}
+
+//	public LightAttenuationNode()
+//	{
+//		name = "LightAttenuation";
+//	}
+
+//	protected override MethodInfo GetFunctionToConvert()
+//	{
+//		return GetType().GetMethod("LightAttenuationFunction", BindingFlags.Static | BindingFlags.NonPublic);
+//	}
 
 
-	private static string LightAttenuationFunction(
-	[Slot(0, Binding.None)] out Vector1 Attenuation,
-	[Slot(1, Binding.WorldSpacePosition)] Vector3 WorldPos)
-	{
+//	public override void GenerateNodeFunction(FunctionRegistry registry, GraphContext graphContext, GenerationMode generationMode)
+//	{
+//		isPreview = generationMode == GenerationMode.Preview;
 
-		return functionBody;
-	}
+//		base.GenerateNodeFunction(registry, graphContext, generationMode);
+//	}
+
+
+//	private static string LightAttenuationFunction(
+//	[Slot(0, Binding.None)] out Vector1 Attenuation,
+//	[Slot(1, Binding.WorldSpacePosition)] Vector3 WorldPos)
+//	{
+
+//		return functionBody;
+//	}
 }
 
-#endif
+//#endif

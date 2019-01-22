@@ -92,25 +92,29 @@ public class ControllerBehaviour : MonoBehaviour {
         //        targetBehaviour.hasCandle = false;
         //    }
         //}
-
-        if ((tempCollider == candleCollider))
+        if (!isBeginning)
         {
-            target = candle.transform.parent.gameObject;
-            targetBehaviour = target.GetComponent<TargetBehaviour>();
-            targetCollider = target.GetComponent<BoxCollider>();
-
-            if (targetBehaviour.hasCandle)
+            if ((tempCollider == candleCollider))
             {
-                GrabHand();
-                candle.transform.parent = this.transform.parent;
-                candle.transform.localEulerAngles = candleRotation;
-                candle.transform.localPosition = candlePosition;
-                candle.layer = LayerMask.NameToLayer("Controllers");
-                candleFlame.layer = LayerMask.NameToLayer("Controllers");
-                yield return new WaitForSeconds(1.0f);
-                targetBehaviour.hasCandle = false;
+                target = candle.transform.parent.gameObject;
+                targetBehaviour = target.GetComponent<TargetBehaviour>();
+                targetCollider = target.GetComponent<BoxCollider>();
+
+                if (targetBehaviour.hasCandle)
+                {
+                    GrabHand();
+                    candle.transform.parent = this.transform.parent;
+                    candle.transform.localEulerAngles = candleRotation;
+                    candle.transform.localPosition = candlePosition;
+                    candle.layer = LayerMask.NameToLayer("Controllers");
+                    candleFlame.layer = LayerMask.NameToLayer("Controllers");
+                    yield return new WaitForSeconds(1.0f);
+                    targetBehaviour.hasCandle = false;
+                }
             }
+
         }
+        
     }
 
     private void OnTriggerEnter(Collider other)

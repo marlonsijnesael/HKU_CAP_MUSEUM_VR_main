@@ -13,6 +13,7 @@ public class ProgressMapper : MonoBehaviour {
     public int amountOfTargets = 0;
     public static ProgressMapper _instance;
     public GameObject targetObject;
+   
 
     //public GameObject endingCollider;
 
@@ -28,7 +29,7 @@ public class ProgressMapper : MonoBehaviour {
             Destroy(this);
         }
 
-
+       
     }
 
     public void Start()
@@ -109,6 +110,6 @@ public class ProgressMapper : MonoBehaviour {
     {
         //fadeout required
         //SceneManager.LoadScene(museumScene.buildIndex);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 }
