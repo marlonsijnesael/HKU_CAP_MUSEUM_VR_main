@@ -8,7 +8,7 @@ public class MuseumManager : MonoBehaviour {
 
     private void Awake()
     {
-        resultingPainting = GameObject.Find("eazel");
+        resultingPainting = GameObject.Find("Easel");
         if (resultingPainting != null)
         {
             resultingPainting.transform.position = new Vector3(-3.425f, 0.0018f, -1.554f);
