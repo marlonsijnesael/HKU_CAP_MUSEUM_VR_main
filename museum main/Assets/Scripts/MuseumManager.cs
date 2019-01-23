@@ -8,12 +8,12 @@ public class MuseumManager : MonoBehaviour {
 
     private void Awake()
     {
-        resultingPainting = GameObject.Find("Layer 1");
+        resultingPainting = GameObject.Find("eazel");
         if (resultingPainting != null)
         {
-            resultingPainting.transform.position = new Vector3(1.574f, 1.312f, 1.752f);
-            resultingPainting.transform.eulerAngles = new Vector3(-270.485f, -167.587f, -52.258f);
-            resultingPainting.transform.localScale = new Vector3(0.200846f, 0.2008461f, 0.1390231f);
+            resultingPainting.transform.position = new Vector3(-3.425f, 0.0018f, -1.554f);
+            resultingPainting.transform.eulerAngles = new Vector3(0.0f, -238.567f, 0.0f);
+            resultingPainting.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
 
         }
         

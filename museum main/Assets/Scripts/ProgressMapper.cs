@@ -96,11 +96,11 @@ public class ProgressMapper : MonoBehaviour {
         if(numberTriggerPresses == 1)
         {
             targetObject.SetActive(true);
-            Color targetColor;
+            //Color targetColor;
 
-            targetColor = targetObject.GetComponent<Renderer>().material.color;
-            targetColor.a = 1.0f;
-            targetObject.GetComponent<Renderer>().material.color = targetColor;
+            //targetColor = targetObject.GetComponent<Renderer>().material.color;
+            //targetColor.a = 1.0f;
+            //targetObject.GetComponent<Renderer>().material.color = targetColor;
 
 
         }
