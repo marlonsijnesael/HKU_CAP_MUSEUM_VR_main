@@ -197,7 +197,7 @@ public class CapturePainting : MonoBehaviour
 
         brushingSource.Play();
 
-        for (float f = 1.0f; f >= 0; f -= 0.005f)
+        for (float f = 1.0f; f >= 0; f -= 0.0023f)
         {
             tcolor1 = screenLayer1.GetComponent<Renderer>().material.color;
             tcolor2 = screenLayer2.GetComponent<Renderer>().material.color;
