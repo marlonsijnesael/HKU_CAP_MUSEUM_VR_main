@@ -13,7 +13,9 @@ public class ProgressMapper : MonoBehaviour {
     public int amountOfTargets = 0;
     public static ProgressMapper _instance;
     public GameObject targetObject;
-   
+    public GameObject sphereCover;
+    private float _fadeDuration = 10f;
+
 
     //public GameObject endingCollider;
 
@@ -96,6 +98,9 @@ public class ProgressMapper : MonoBehaviour {
         if(numberTriggerPresses == 1)
         {
             targetObject.SetActive(true);
+            
+            //FadeToWhite();
+            numberTriggerPresses++;
             //Color targetColor;
 
             //targetColor = targetObject.GetComponent<Renderer>().material.color;
@@ -106,10 +111,54 @@ public class ProgressMapper : MonoBehaviour {
         }
     }
 
+    IEnumerator FadeToBlack()
+    {
+
+        Color tcolor1;
+ 
+
+        tcolor1 = sphereCover.GetComponent<Renderer>().material.color;
+
+        for (float f = 1.0f; f >= 0; f -= 0.0070f)
+        {
+            tcolor1 = sphereCover.GetComponent<Renderer>().material.color;
+
+            tcolor1.a = 1 - f;
+
+            sphereCover.GetComponent<Renderer>().material.color = tcolor1;
+            yield return new WaitForSeconds(0.0025f);
+
+        }
+
+        SceneManager.LoadScene(1);
+
+
+
+    }
+
     public void GoToMuseum()
     {
         //fadeout required
-        //SceneManager.LoadScene(museumScene.buildIndex);
-        SceneManager.LoadScene(1);
+        //FadeToWhite();
+        StartCoroutine(FadeToBlack());
+        //SceneManager.LoadScene(1);
+        //Fader._instance.DoStuff(false,true);
+        //Debug.Log("fader is working");
+       
+    }
+
+    private void FadeToWhite()
+    {
+        //set start color
+        SteamVR_Fade.Start(Color.clear, 0f);
+        //set and start fade to
+        SteamVR_Fade.Start(Color.white, _fadeDuration);
+    }
+    private void FadeFromWhite()
+    {
+        //set start color
+        SteamVR_Fade.Start(Color.white, 0f);
+        //set and start fade to
+        SteamVR_Fade.Start(Color.clear, _fadeDuration);
     }
 }
