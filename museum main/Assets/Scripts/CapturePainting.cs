@@ -202,7 +202,7 @@ public class CapturePainting : MonoBehaviour
             tcolor1 = screenLayer1.GetComponent<Renderer>().material.color;
             tcolor2 = screenLayer2.GetComponent<Renderer>().material.color;
             tcolor1.a = 1 - f;
-            tcolor2.a = f;
+            tcolor2.a = 0;
             ////imageLayer1.color = tcolor1;
             screenLayer1.GetComponent<Renderer>().material.color = tcolor1;
 
