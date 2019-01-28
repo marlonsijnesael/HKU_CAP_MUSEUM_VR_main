@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: 6604ae586f3cb6d43b484cc4eac3a335
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Arms
+    100002: Bangs1
+    100004: Bangs2
+    100006: Cap
+    100008: Cornea
+    100010: Ears
+    100012: Eyelashes
+    100014: EyeMoisture
+    100016: EyeMoisture_Genesis_8_Male_Eyelashes
+    100018: EyeSocket
+    100020: FABRIC_0321_FRONT_2184386
+    100022: Face
+    100024: Fingernails
+    100026: Head
+    100028: Irises
+    100030: Legs
+    100032: Lips
+    100034: Material2184418
+    100036: Mouth
+    100038: Pants_FRONT_2184394
+    100040: Pupils
+    100042: Sclera
+    100044: Shoes_FRONT_2184398
+    100046: ShorterBangs1
+    100048: ShorterBangs2
+    100050: //RootNode
+    100052: Teeth
+    100054: Toenails
+    100056: Top_Bottom_FRONT_2184382
+    100058: Torso
+    100060: Under
+    100062: Undersleeve_FRONT_2184390
+    100064: Wisps
+    400000: Arms
+    400002: Bangs1
+    400004: Bangs2
+    400006: Cap
+    400008: Cornea
+    400010: Ears
+    400012: Eyelashes
+    400014: EyeMoisture
+    400016: EyeMoisture_Genesis_8_Male_Eyelashes
+    400018: EyeSocket
+    400020: FABRIC_0321_FRONT_2184386
+    400022: Face
+    400024: Fingernails
+    400026: Head
+    400028: Irises
+    400030: Legs
+    400032: Lips
+    400034: Material2184418
+    400036: Mouth
+    400038: Pants_FRONT_2184394
+    400040: Pupils
+    400042: Sclera
+    400044: Shoes_FRONT_2184398
+    400046: ShorterBangs1
+    400048: ShorterBangs2
+    400050: //RootNode
+    400052: Teeth
+    400054: Toenails
+    400056: Top_Bottom_FRONT_2184382
+    400058: Torso
+    400060: Under
+    400062: Undersleeve_FRONT_2184390
+    400064: Wisps
+    2100000: ArmsMat
+    2100002: Bangs1Mat
+    2100004: Bangs2Mat
+    2100006: CapMat
+    2100008: CorneaMat
+    2100010: EarsMat
+    2100012: EyelashesMat
+    2100014: EyeMoistureMat
+    2100016: EyeMoisture_Genesis_8_Male_EyelashesMat
+    2100018: EyeSocketMat
+    2100020: FABRIC_0321_FRONT_2184386Mat
+    2100022: FaceMat
+    2100024: FingernailsMat
+    2100026: HeadMat
+    2100028: IrisesMat
+    2100030: LegsMat
+    2100032: LipsMat
+    2100034: Material2184418Mat
+    2100036: MouthMat
+    2100038: Pants_FRONT_2184394Mat
+    2100040: PupilsMat
+    2100042: ScleraMat
+    2100044: Shoes_FRONT_2184398Mat
+    2100046: ShorterBangs1Mat
+    2100048: ShorterBangs2Mat
+    2100050: TeethMat
+    2100052: ToenailsMat
+    2100054: Top_Bottom_FRONT_2184382Mat
+    2100056: TorsoMat
+    2100058: UnderMat
+    2100060: Undersleeve_FRONT_2184390Mat
+    2100062: WispsMat
+    2300000: Arms
+    2300002: Bangs1
+    2300004: Bangs2
+    2300006: Cap
+    2300008: Cornea
+    2300010: Ears
+    2300012: Eyelashes
+    2300014: EyeMoisture
+    2300016: EyeMoisture_Genesis_8_Male_Eyelashes
+    2300018: EyeSocket
+    2300020: FABRIC_0321_FRONT_2184386
+    2300022: Face
+    2300024: Fingernails
+    2300026: Head
+    2300028: Irises
+    2300030: Legs
+    2300032: Lips
+    2300034: Material2184418
+    2300036: Mouth
+    2300038: Pants_FRONT_2184394
+    2300040: Pupils
+    2300042: Sclera
+    2300044: Shoes_FRONT_2184398
+    2300046: ShorterBangs1
+    2300048: ShorterBangs2
+    2300050: Teeth
+    2300052: Toenails
+    2300054: Top_Bottom_FRONT_2184382
+    2300056: Torso
+    2300058: Under
+    2300060: Undersleeve_FRONT_2184390
+    2300062: Wisps
+    3300000: Arms
+    3300002: Bangs1
+    3300004: Bangs2
+    3300006: Cap
+    3300008: Cornea
+    3300010: Ears
+    3300012: Eyelashes
+    3300014: EyeMoisture
+    3300016: EyeMoisture_Genesis_8_Male_Eyelashes
+    3300018: EyeSocket
+    3300020: FABRIC_0321_FRONT_2184386
+    3300022: Face
+    3300024: Fingernails
+    3300026: Head
+    3300028: Irises
+    3300030: Legs
+    3300032: Lips
+    3300034: Material2184418
+    3300036: Mouth
+    3300038: Pants_FRONT_2184394
+    3300040: Pupils
+    3300042: Sclera
+    3300044: Shoes_FRONT_2184398
+    3300046: ShorterBangs1
+    3300048: ShorterBangs2
+    3300050: Teeth
+    3300052: Toenails
+    3300054: Top_Bottom_FRONT_2184382
+    3300056: Torso
+    3300058: Under
+    3300060: Undersleeve_FRONT_2184390
+    3300062: Wisps
+    4300000: Arms
+    4300002: Bangs1
+    4300004: Bangs2
+    4300006: Cap
+    4300008: Cornea
+    4300010: Ears
+    4300012: Eyelashes
+    4300014: EyeMoisture
+    4300016: EyeMoisture_Genesis_8_Male_Eyelashes
+    4300018: EyeSocket
+    4300020: FABRIC_0321_FRONT_2184386
+    4300022: Face
+    4300024: Fingernails
+    4300026: Head
+    4300028: Irises
+    4300030: Legs
+    4300032: Lips
+    4300034: Material2184418
+    4300036: Mouth
+    4300038: Pants_FRONT_2184394
+    4300040: Pupils
+    4300042: Sclera
+    4300044: Shoes_FRONT_2184398
+    4300046: ShorterBangs1
+    4300048: ShorterBangs2
+    4300050: Teeth
+    4300052: Toenails
+    4300054: Top_Bottom_FRONT_2184382
+    4300056: Torso
+    4300058: Under
+    4300060: Undersleeve_FRONT_2184390
+    4300062: Wisps
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ArmsMat
+    second: {fileID: 2100000, guid: cf3ea8527ca6cc742b153c2583ee01ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bangs1Mat
+    second: {fileID: 2100000, guid: d3d0de8f8ad220742827b09e6d407fac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bangs2Mat
+    second: {fileID: 2100000, guid: 6e4e0b80c7fd9fd4ba6f4b96d3af9336, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CapMat
+    second: {fileID: 2100000, guid: dbf0eaaec15691648a28684876b78c7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CorneaMat
+    second: {fileID: 2100000, guid: 87e24b476fe96e3469c626c0a322e60a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EarsMat
+    second: {fileID: 2100000, guid: dbf0eaaec15691648a28684876b78c7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EyeMoistureMat
+    second: {fileID: 2100000, guid: 9858b46e6c61d0740bedadb090cbb8a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EyeMoisture_Genesis_8_Male_EyelashesMat
+    second: {fileID: 2100000, guid: 9858b46e6c61d0740bedadb090cbb8a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EyeSocketMat
+    second: {fileID: 2100000, guid: dbf0eaaec15691648a28684876b78c7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EyelashesMat
+    second: {fileID: 2100000, guid: b6ecc844630473643b9f76778b19867c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FABRIC_0321_FRONT_2184386Mat
+    second: {fileID: 2100000, guid: f3c27dee72f89c24c80c89d7f7fdbe6b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FaceMat
+    second: {fileID: 2100000, guid: dbf0eaaec15691648a28684876b78c7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FingernailsMat
+    second: {fileID: 2100000, guid: cf3ea8527ca6cc742b153c2583ee01ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HeadMat
+    second: {fileID: 2100000, guid: d3d0de8f8ad220742827b09e6d407fac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IrisesMat
+    second: {fileID: 2100000, guid: 782b699693a1b8447a5e43bcdf62b224, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LegsMat
+    second: {fileID: 2100000, guid: a65ec78897f378642bfdf5bd2d5254ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LipsMat
+    second: {fileID: 2100000, guid: dbf0eaaec15691648a28684876b78c7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material2184418Mat
+    second: {fileID: 2100000, guid: 356730c123d80194baaebb7c8cd92a8f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MouthMat
+    second: {fileID: 2100000, guid: 7b72e500bc198224c9aa4ca663f8f100, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pants_FRONT_2184394Mat
+    second: {fileID: 2100000, guid: 28a16bca8bf274e4996b0ce3d94c6622, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PupilsMat
+    second: {fileID: 2100000, guid: fdf93658e15dc4a4ba10462e05846407, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ScleraMat
+    second: {fileID: 2100000, guid: fdf93658e15dc4a4ba10462e05846407, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shoes_FRONT_2184398Mat
+    second: {fileID: 2100000, guid: 28a16bca8bf274e4996b0ce3d94c6622, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ShorterBangs1Mat
+    second: {fileID: 2100000, guid: 6e4e0b80c7fd9fd4ba6f4b96d3af9336, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ShorterBangs2Mat
+    second: {fileID: 2100000, guid: d3d0de8f8ad220742827b09e6d407fac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TeethMat
+    second: {fileID: 2100000, guid: 7b72e500bc198224c9aa4ca663f8f100, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ToenailsMat
+    second: {fileID: 2100000, guid: a65ec78897f378642bfdf5bd2d5254ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Top_Bottom_FRONT_2184382Mat
+    second: {fileID: 2100000, guid: 0b840a2b197f8f94095682495a34c1b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TorsoMat
+    second: {fileID: 2100000, guid: 2d7eaba848ce12346850a82b20ae150d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: UnderMat
+    second: {fileID: 2100000, guid: d3d0de8f8ad220742827b09e6d407fac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Undersleeve_FRONT_2184390Mat
+    second: {fileID: 2100000, guid: 4944226934cfd5e40b4b656e7b6f684b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WispsMat
+    second: {fileID: 2100000, guid: d3d0de8f8ad220742827b09e6d407fac, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

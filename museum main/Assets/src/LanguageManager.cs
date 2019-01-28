@@ -6,13 +6,17 @@ using UnityEngine.UI;
 
 public class LanguageManager : MonoBehaviour {
     private int languageIndex = 1;
-    private List<string> eng_Text = new List<string>(new string[] { "Play", "Settings", "Sound" });
-    private List<string> nl_Text = new List<string>(new string[] { "Start", "Instellingen", "Geluid" });
+    private List<string> eng_Text = new List<string>(new string[] { "Play", "Settings", "painting" });
+    private List<string> nl_Text = new List<string>(new string[] { "Start", "Instellingen", "Schilderij" });
     private List<LoadText> gameText = new List<LoadText>();
 
     // Use this for initialization
     void Start () {
         DontDestroyOnLoad(this.gameObject);
+        if (PlayerPrefs.HasKey("LanguageIndex"))
+        {
+          PlayerPrefs.SetInt("LanguageIndex", 1);
+        }
         languageIndex = PlayerPrefs.GetInt("LanguageIndex");
 	}
 
