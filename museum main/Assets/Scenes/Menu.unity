@@ -320,6 +320,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textIndex: 0
+--- !u!1 &259818426 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1575848015695610, guid: 0c778493318a8ea4abb130741de7b94e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1512967667}
 --- !u!1 &286646368
 GameObject:
   m_ObjectHideFlags: 0
@@ -1963,7 +1968,29 @@ Prefab:
       objectReference: {fileID: 1240660125}
     - target: {fileID: 1124035849636360, guid: 0c778493318a8ea4abb130741de7b94e, type: 2}
       propertyPath: m_Name
-      value: manager
+      value: Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1728564403241020, guid: 0c778493318a8ea4abb130741de7b94e, type: 2}
+      propertyPath: m_TagString
+      value: StartButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1488579516579890, guid: 0c778493318a8ea4abb130741de7b94e, type: 2}
+      propertyPath: m_TagString
+      value: PaintingButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322805006887160, guid: 0c778493318a8ea4abb130741de7b94e, type: 2}
+      propertyPath: m_TagString
+      value: SettingsButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 114876034019429352, guid: 0c778493318a8ea4abb130741de7b94e,
+        type: 2}
+      propertyPath: MainMenuPanel
+      value: 
+      objectReference: {fileID: 259818426}
+    - target: {fileID: 114428034973358944, guid: 0c778493318a8ea4abb130741de7b94e,
+        type: 2}
+      propertyPath: textIndex
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c778493318a8ea4abb130741de7b94e, type: 2}
@@ -2080,6 +2107,38 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1607006280 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1322805006887160, guid: 0c778493318a8ea4abb130741de7b94e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1512967667}
+--- !u!65 &1607006286
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1607006280}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 159.39, y: 30.2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1607006287
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1607006280}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1622136256
 GameObject:
   m_ObjectHideFlags: 0

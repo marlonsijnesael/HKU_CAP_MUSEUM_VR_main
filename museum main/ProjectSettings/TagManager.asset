@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Candle
+  - MainButton
+  - PaintingButton
+  - StartButton
+  - SettingsButton
   layers:
   - Default
   - TransparentFX

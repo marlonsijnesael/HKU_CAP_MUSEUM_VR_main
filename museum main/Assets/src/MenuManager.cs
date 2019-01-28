@@ -57,9 +57,9 @@ public class MenuManager : MonoBehaviour {
 
 
 
-    public void ShowSettings()
+    public void ShowSettings(bool mainMenu, bool settingsMenu)
     {
-        MainMenuPanel.SetActive(false);
-        SettingMenuPanel.SetActive(true);
+        MainMenuPanel.SetActive(mainMenu);
+        SettingMenuPanel.SetActive(settingsMenu);
     }
 }
