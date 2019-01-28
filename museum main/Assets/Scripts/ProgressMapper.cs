@@ -130,7 +130,7 @@ public class ProgressMapper : MonoBehaviour {
 
         }
 
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
 
 
 
