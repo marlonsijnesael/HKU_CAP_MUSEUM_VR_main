@@ -23,13 +23,13 @@ public class HandPicker : MonoBehaviour {
         {
             if (hit.transform.tag == "PaintingButton")
             {
-                GameObject.Find("Manager").GetComponent<MenuManager>().ShowSettings(true, false);
+                GameObject.Find("Manager").GetComponent<MenuManager>().ShowSettings();
                
             }
 
             else if (hit.transform.tag == "SettingsButton")
             {
-                GameObject.Find("Manager").GetComponent<MenuManager>().ShowSettings(false, true);
+                GameObject.Find("Manager").GetComponent<MenuManager>().ShowSettings();
             }
 
             else if (hit.transform.tag == "StartButton")

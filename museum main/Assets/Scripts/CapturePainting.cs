@@ -29,9 +29,8 @@ public class CapturePainting : MonoBehaviour
     public GameObject item;
     public bool holdingItem = false;
     private bool canFade;
-    ProgressMapper progressMapper;
 
-
+    
 
 
     // Use this for initialization
@@ -41,7 +40,6 @@ public class CapturePainting : MonoBehaviour
 
         bigScreen2MeshRenderer = screenLayer2.GetComponent<MeshRenderer>();
         cam = GetComponent<Camera>();
-        progressMapper = ProgressMapper._instance;
 
         cam.forceIntoRenderTexture = true;
         if (Directory.Exists(screenshotsDirectory))
@@ -53,8 +51,8 @@ public class CapturePainting : MonoBehaviour
         {
             Directory.CreateDirectory(screenshotsDirectory);
             cam.targetTexture = currentRT;
-            //cam.targetTexture.width = 1024;
-            //cam.targetTexture.height = 1024;
+            cam.targetTexture.width = 1024;
+            cam.targetTexture.height = 1024;
         }
 
         canFade = true;
@@ -112,8 +110,6 @@ public class CapturePainting : MonoBehaviour
         {
             TakeScreenShot();
             ReadPixelsOut("SS_" + screenshotCount + ".png");
-            progressMapper.AddTriggerPress();
-
             //do stuff
         }
 
@@ -197,12 +193,12 @@ public class CapturePainting : MonoBehaviour
 
         brushingSource.Play();
 
-        for (float f = 1.0f; f >= 0; f -= 0.0023f)
+        for (float f = 1.0f; f >= 0; f -= 0.005f)
         {
             tcolor1 = screenLayer1.GetComponent<Renderer>().material.color;
             tcolor2 = screenLayer2.GetComponent<Renderer>().material.color;
             tcolor1.a = 1 - f;
-            tcolor2.a = 0;
+            tcolor2.a = f;
             ////imageLayer1.color = tcolor1;
             screenLayer1.GetComponent<Renderer>().material.color = tcolor1;
 

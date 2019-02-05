@@ -12,19 +12,19 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114279711683596336}
-  - {fileID: 114470897868158940}
+  - {fileID: 114876312570206700}
+  - {fileID: 114254377114429232}
   EditorEvents:
-  - {fileID: 114004203989687300}
-  - {fileID: 114386735926723862}
-  - {fileID: 114866806373654436}
-  - {fileID: 114356915140139454}
-  - {fileID: 114256570752764946}
-  - {fileID: 114549858550290996}
+  - {fileID: 114136447814751872}
+  - {fileID: 114177016428709724}
+  - {fileID: 114132411023811192}
+  - {fileID: 114501484023668410}
+  - {fileID: 114565998610023550}
+  - {fileID: 114683552522844928}
   MasterBanks:
-  - {fileID: 114470897868158940}
+  - {fileID: 114254377114429232}
   StringsBanks:
-  - {fileID: 114279711683596336}
+  - {fileID: 114876312570206700}
   stringsBankWriteTime: 636801787940000000
   cacheVersion: 3
 --- !u!114 &114001850999318880
@@ -258,6 +258,21 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114065212261622100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: schuiven_parameter
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114101335360399402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,6 +390,51 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1154
   Exists: 1
+--- !u!114 &114132411023811192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SounDesign/neerzetten_kandelaar
+  guid: 5ae3450ba42f9e4c83bc1d92f414a425
+  Banks:
+  - {fileID: 114254377114429232}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 793
+--- !u!114 &114136447814751872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SounDesign/schuiven_kandelaar
+  guid: 0c2ef8b87732294485d02f58f7438d3c
+  Banks:
+  - {fileID: 114254377114429232}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114065212261622100}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 41535
 --- !u!114 &114139779794609274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,6 +525,28 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 905
+--- !u!114 &114177016428709724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SounDesign/chatting_room
+  guid: 3bf4a3830e7985489db75cce323a90a8
+  Banks:
+  - {fileID: 114254377114429232}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 261537
 --- !u!114 &114180005044452098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -660,6 +742,25 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114254377114429232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\Users\Documenten\HKU_CAP_KeepnotonGit\FMOD_sounddesign+music\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636801787920000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 3589440
+  Exists: 1
 --- !u!114 &114256570752764946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -720,6 +821,21 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 41535
+--- !u!114 &114276428002543124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: distance_lute
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114279711683596336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1100,6 +1216,29 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114501484023668410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Music/luit
+  guid: 5e693d4cb20a5d43941f74cc4203c4c7
+  Banks:
+  - {fileID: 114254377114429232}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114276428002543124}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 34285
 --- !u!114 &114501788071334460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1264,6 +1403,28 @@ MonoBehaviour:
   - Name: Desktop
     Value: 3589440
   Exists: 1
+--- !u!114 &114565998610023550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SounDesign/oppakken_kandelaar
+  guid: c1eb5034d1f5f84d8473e45b7321801d
+  Banks:
+  - {fileID: 114254377114429232}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 905
 --- !u!114 &114566874731451540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1490,6 +1651,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 261537
+--- !u!114 &114683552522844928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SounDesign/vlam
+  guid: e99ffaef08433f47919957142b97c817
+  Banks:
+  - {fileID: 114254377114429232}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114837026868253678}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 213778
 --- !u!114 &114693341691898870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1716,6 +1900,21 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114837026868253678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: distance_vlam
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114842909567088834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1795,6 +1994,25 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 793
+--- !u!114 &114876312570206700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\Users\Documenten\HKU_CAP_KeepnotonGit\FMOD_sounddesign+music\Build\Desktop\Master
+    Bank.strings.bank
+  lastModified: 636801787940000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1154
+  Exists: 1
 --- !u!114 &114877660465168680
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7,14 +7,11 @@ public class TargetBehaviour : MonoBehaviour {
     public GameObject candle;
     public GameObject candleFlame;
     public GameObject hand;
-    public bool hasCandle;
-    public bool isObjectiveTarget;
+    public bool hasCandle;  
     Collider candleCollider;
     Collider tempCollider;
-    Collider targetCollider;
     AudioSource audioData;
     ControllerBehaviour controllerBehaviour;
-    ProgressMapper progressMapper;
 
     [FMODUnity.EventRef]
     public string f_event;
@@ -31,9 +28,7 @@ public class TargetBehaviour : MonoBehaviour {
         hasCandle = false;
         //audioData = GetComponent<AudioSource>();
         controllerBehaviour = hand.GetComponent<ControllerBehaviour>();
-        targetCollider = GetComponent<Collider>();
-        progressMapper = ProgressMapper._instance;
-
+        
 
         //audioData.Play(0);
 
@@ -48,25 +43,15 @@ public class TargetBehaviour : MonoBehaviour {
     // Update is called once per frame
     void Update () {
 
-        if(candle == null)
-        {
-            candle = GameObject.FindGameObjectWithTag("Candle");
-        }
 
-        if (!candle.transform.IsChildOf(transform))
-        {
-            hasCandle = false;
-        }
 		
 	}
 
-    bool IsInRange(float angle)
+    bool IsInRange(float xAngle)
     {
-
-        if((angle >= 345 && angle <= 360) || (angle >= 0 && angle <= 25))
-
+        if((xAngle >= 355 && xAngle <= 360) || (xAngle >= 0 && xAngle <= 5))
         {
-            print(angle);
+            print(xAngle);
             return true;
         }
         else
@@ -80,15 +65,10 @@ public class TargetBehaviour : MonoBehaviour {
     IEnumerator ChangeParentSlow()
     {
 
-
-        if ((tempCollider == candleCollider) && !hasCandle && IsInRange(candle.transform.rotation.eulerAngles.x) && IsInRange(candle.transform.rotation.eulerAngles.z) && (Mathf.Abs(candleCollider.transform.position.y - targetCollider.bounds.max.y) <= 0.007f))
-        //if ((tempCollider == candleCollider) && !hasCandle)
-        {
-            if (isObjectiveTarget)
+        //if ((tempCollider == candleCollider) && !hasCandle && IsInRange(candle.transform.rotation.eulerAngles.z))
+        if ((tempCollider == candleCollider) && !hasCandle)
             {
-                progressMapper.AddTarget(this.gameObject);
 
-            }
             candle.transform.parent = this.transform;
             candle.layer = 0;
             candleFlame.layer = 0;
@@ -100,13 +80,13 @@ public class TargetBehaviour : MonoBehaviour {
             yield return new WaitForSeconds(1.0f);
             hasCandle = true;
             print("Isin1");
-
-
-
+            
+         
 
         }
-    }
 
+
+    }
 
     private void OnTriggerEnter(Collider other)
     {

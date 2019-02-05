@@ -57,11 +57,9 @@ public class MenuManager : MonoBehaviour {
 
 
 
-    public void ShowSettings(bool mainMenu, bool settingsMenu)
+    public void ShowSettings()
     {
-        bool main = MainMenuPanel.activeInHierarchy;
-        bool settings = SettingMenuPanel.activeInHierarchy;
-        MainMenuPanel.SetActive(!main);
-        SettingMenuPanel.SetActive(settingsMenu);
+        MainMenuPanel.SetActive(false);
+        SettingMenuPanel.SetActive(true);
     }
 }
