@@ -130,7 +130,7 @@ public class ProgressMapper : MonoBehaviour {
 
         }
 
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("BlockoutMuseum");
 
 
 
