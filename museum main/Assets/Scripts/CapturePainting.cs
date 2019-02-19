@@ -13,30 +13,40 @@ public class CapturePainting : MonoBehaviour
     public HandRole hand = HandRole.RightHand;
     public bool rightTrigger;
 
+    //Render texture that will be on the painting layers
     public RenderTexture paintingScreen;
+    //Painting layer 1
     public GameObject screenLayer1;
+    //Painting layer 2
     public GameObject screenLayer2;
     MeshRenderer bigScreen2MeshRenderer;
+    //Ortogonal camera
     Camera cam;
+    //Name of the folder that contains the captures
     private string screenshotsDirectory = "UnityHeadlessRenderingScreenshots";
     private int screenshotCount = 0;
     private int frameCount = 0;
+    //Texture for the captures
     private Texture2D resultantImage;
+    //Render texture for the captures
     public RenderTexture currentRT;
+    //AudioSource for the brushing sound
     public AudioSource brushingSource;
 
     public GameObject itemSlot;
     public GameObject item;
     public bool holdingItem = false;
+    //Flag that indicates if the process of fading cam start
     private bool canFade;
 
     
 
 
     // Use this for initialization
+    // Creates a directory for the captured images if it doesn't exist. If it exists, deletes it and creates it again.
     void Start()
     {
-
+        
 
         bigScreen2MeshRenderer = screenLayer2.GetComponent<MeshRenderer>();
         cam = GetComponent<Camera>();
@@ -58,6 +68,8 @@ public class CapturePainting : MonoBehaviour
         canFade = true;
     }
 
+
+    // This function isn't used and can be eliminated. 
     IEnumerator FreezeCam()
     {
         //yield return null;
@@ -66,6 +78,7 @@ public class CapturePainting : MonoBehaviour
         cam.cullingMask = 0;
     }
 
+    // This function isn't used and can be eliminated. 
     void StartFreezing()
     {
         StartCoroutine("FreezeCam");
@@ -78,6 +91,7 @@ public class CapturePainting : MonoBehaviour
     }
 
     // Update is called once per frame
+    // Used to detect the trigger from the controller
     void LateUpdate()
     {
 
@@ -127,6 +141,7 @@ public class CapturePainting : MonoBehaviour
 
     }
 
+    // Used to define if the trigger was pulled or not. Used in the LateUpdate function
     public bool HandleInput(HandRole _hand, ControllerButton _controllerButton, bool _inputBool)
     {
         if (ViveInput.GetPress(_hand, _controllerButton))
@@ -146,6 +161,7 @@ public class CapturePainting : MonoBehaviour
 
     }
 
+    // Turns image from camera to png
     private void ReadPixelsOut(string filename)
     {
         if (resultantImage != null)
@@ -178,6 +194,8 @@ public class CapturePainting : MonoBehaviour
         }
     }
 
+    // Does the fading. Uses two layers to make the fading effect. Since its a procedure uses a flag called canFade that is True 
+    // if a new fading process can start and False when it cannot. It also triggers the sound for the brushing in the canvas.
     IEnumerator FadePaintingIn()
     {
 
@@ -193,6 +211,7 @@ public class CapturePainting : MonoBehaviour
 
         brushingSource.Play();
 
+        //Goes from 1 to 0 changing the alpha color of the layers of the painting
         for (float f = 1.0f; f >= 0; f -= 0.005f)
         {
             tcolor1 = screenLayer1.GetComponent<Renderer>().material.color;
@@ -221,7 +240,7 @@ public class CapturePainting : MonoBehaviour
             //}
 
 
-
+            //this timer makes the effect of fading. It waits time for the alpha color to change from 0 to 1
             yield return new WaitForSeconds(0.0025f);
 
 
@@ -238,7 +257,7 @@ public class CapturePainting : MonoBehaviour
         canFade = true;
     }
 
-
+    // Captures the current view of the camera
     public void TakeScreenShot()
     {
         screenshotCount += 1;
