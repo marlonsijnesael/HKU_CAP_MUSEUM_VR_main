@@ -6,12 +6,12 @@ using UnityEngine.UI;
 
 public class LoadText : MonoBehaviour {
 
-    private GameObject manager;
-    public int textIndex;
-    Text displayText;
-    LanguageManager languageManager;
+    private GameObject manager; //manager gameobject that handles general flow of application
+    public int textIndex;// index to define wich word/sentence will be received from manager
+    Text displayText;//the text element where the sentence will be displayed in
+    LanguageManager languageManager;//manager with all language sentences
 
-	// Use this for initialization
+	//Adds the reference of this text to the languagemanager list
 	void Start () {
         displayText = transform.GetChild(0).GetComponent<Text>();
         manager = GameObject.Find("Manager");
@@ -20,11 +20,7 @@ public class LoadText : MonoBehaviour {
         displayText.text = languageManager.GetText(textIndex);
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
+	//update the text if language is changed is called from LanguageManager
     internal void UpdateTextLoaded()
     {
         displayText.text = languageManager.GetText(textIndex);

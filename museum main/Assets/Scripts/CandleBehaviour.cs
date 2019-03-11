@@ -1,24 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class CandleBehaviour : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-
+public class CandleBehaviour : MonoBehaviour
+{
     private void OnCollisionEnter(Collision collision)
     {
-
-
         int i = 0;
 
         foreach (ContactPoint contact in collision.contacts)
@@ -27,7 +12,5 @@ public class CandleBehaviour : MonoBehaviour {
             // Visualize the contact point
             //Debug.DrawRay(contact.point, contact.normal, Color.white);
         }
-
-
     }
 }

@@ -1,21 +1,27 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class LanguageManager : MonoBehaviour {
-    private int languageIndex = 1;
-    private List<string> eng_Text = new List<string>(new string[] { "Play", "Settings", "Sound" });
-    private List<string> nl_Text = new List<string>(new string[] { "Start", "Instellingen", "Geluid" });
-    private List<LoadText> gameText = new List<LoadText>();
+    private int languageIndex = 0; //default language
+    private List<string> eng_Text = new List<string>(new string[] { "Play", "Settings", "Sound" });//all english text
+    private List<string> nl_Text = new List<string>(new string[] { "Start", "Instellingen", "Geluid" });//all dutch text
+    private List<LoadText> gameText = new List<LoadText>();//all LoadText references that gets filled during startup of scene
 
     // Use this for initialization
     void Start () {
         DontDestroyOnLoad(this.gameObject);
-        languageIndex = PlayerPrefs.GetInt("LanguageIndex");
+        if(PlayerPrefs.HasKey("LanguageIndex"))
+        {
+            languageIndex = PlayerPrefs.GetInt("LanguageIndex");
+        }
+        else
+        {
+            PlayerPrefs.SetInt("LanguageIndex", languageIndex);
+            PlayerPrefs.Save();
+        }
 	}
 
+    //saves language index in playerprefs
     public void SetLanguageIndex(int index)
     {
         languageIndex = index;
@@ -25,6 +31,7 @@ public class LanguageManager : MonoBehaviour {
         PlayerPrefs.Save();
     }
 
+    //for all LoaText ellements in list get the text updated
     private void UpdateText()
     {
         for(int i =0; i<gameText.Count;i++)
@@ -33,11 +40,13 @@ public class LanguageManager : MonoBehaviour {
         }
     }
 
+    //saves LoadText reference to list at startup of scene
     public void AddGameText(LoadText _text)
     {
         gameText.Add(_text);
     }
 
+    //retuns the right word/sentence based on id and curent languageindex
     public string GetText(int id)
     {
         switch(languageIndex)

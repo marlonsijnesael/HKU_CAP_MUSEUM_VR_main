@@ -77,7 +77,6 @@ public class ControllerBehaviour : MonoBehaviour {
         //{
         //    candle.transform.parent = this.transform;
         //    hasCandle = true;
-
         //}
     }
 
@@ -91,7 +90,6 @@ public class ControllerBehaviour : MonoBehaviour {
 
 
         }
-
     }
 
     public void GrabHand()
